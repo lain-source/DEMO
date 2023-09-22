@@ -1,0 +1,3089 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>My Docs</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">My Docs</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#physical-quantities-and-units" class="nav-link">Physical Quantities and Units</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#base-quantities-and-base-units" class="nav-link">Base Quantities and Base Units</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#the-mole" class="nav-link">The Mole</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#derived-quantity-and-derived-units" class="nav-link">Derived Quantity and Derived Units</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#ms" class="nav-link">^ = ms</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#js" class="nav-link">^ = Js</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#dimensional-analysis" class="nav-link">Dimensional Analysis</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#m" class="nav-link">^ = [m]</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#multiples-and-submultiples" class="nav-link">Multiples and Submultiples</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#scalars-and-vectors" class="nav-link">Scalars and Vectors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#addition-of-scalars-and-vectors" class="nav-link">Addition of Scalars and Vectors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#resolving-vectors" class="nav-link">Resolving Vectors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#errors" class="nav-link">Errors</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#precision-and-accuracy" class="nav-link">Precision and Accuracy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#uncertainties" class="nav-link">Uncertainties</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#uncertainty-in-compound" class="nav-link">Uncertainty in Compound</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#quantities" class="nav-link">Quantities</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#e" class="nav-link">E =</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#types-of-forces" class="nav-link">Types of Forces</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#up-thrust-on-a-body-in-fluid" class="nav-link">Up thrust on a Body in Fluid</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#archimedes-principle" class="nav-link">Archimedes Principle</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#principle-of-flotation" class="nav-link">Principle of Flotation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#frictional-forces" class="nav-link">Frictional Forces</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#frictional-forces-in-solids" class="nav-link">Frictional Forces in Solids</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#f-p" class="nav-link">F = P</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#laws-of-friction" class="nav-link">Laws of Friction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#viscous-forces" class="nav-link">Viscous Forces</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#static-equilibrium" class="nav-link">Static Equilibrium</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#principle-of-moments" class="nav-link">Principle of Moments</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#conditions-for-equilibrium" class="nav-link">Conditions for Equilibrium</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#triangle-of-forces" class="nav-link">Triangle of Forces</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#3motions" class="nav-link">3.Motions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#kinematics" class="nav-link">Kinematics</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#displacement-time-st-graph" class="nav-link">Displacement- Time (s.t) Graph</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#velocity-time-graphs" class="nav-link">Velocity – Time Graphs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#uniformly-accelerated-motion-on-a" class="nav-link">Uniformly Accelerated Motion on a</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#straight-line" class="nav-link">Straight Line</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#equations-of-motion" class="nav-link">Equations of Motion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#projectiles" class="nav-link">Projectiles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#terminal-velocity" class="nav-link">Terminal Velocity</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#upward-motion" class="nav-link">Upward Motion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#at-maximum-height" class="nav-link">At Maximum Height</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#downward-motion" class="nav-link">Downward Motion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dynamics" class="nav-link">Dynamics</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#newtons-laws-of-motion" class="nav-link">Newton’s Laws of Motion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#linear-momentum" class="nav-link">Linear Momentum, 𝞺</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#principle-of-conservation-of-linear" class="nav-link">Principle of Conservation of Linear</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#momentum" class="nav-link">Momentum</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#classification-of-collisions" class="nav-link">Classification of Collisions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#impulse" class="nav-link">Impulse</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#circular-motion" class="nav-link">Circular Motion</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#angular-displacements" class="nav-link">Angular Displacements, Ɵ</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#centripetal-acceleration-and" class="nav-link">Centripetal acceleration and</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#antripetal-force" class="nav-link">Antripetal force</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#gravitation" class="nav-link">Gravitation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#gravitational-field" class="nav-link">Gravitational Field</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#gravitational-field-strength-g" class="nav-link">Gravitational Field Strength, g</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#newtons-law-of-gravitational" class="nav-link">Newton’s Law of Gravitational</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#field-strength" class="nav-link">Field Strength</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#gravitational-field-strength-of-a" class="nav-link">Gravitational field strength of a</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#point-mass" class="nav-link">Point Mass</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#gravitational-field-strength-for" class="nav-link">Gravitational Field Strength for</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#the-earth" class="nav-link">The Earth</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#gravitation-and-planets-in-circular" class="nav-link">Gravitation and Planets in Circular</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#orbits" class="nav-link">Orbits</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#geostationary-orbits" class="nav-link">Geostationary Orbits</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#work-energy-and-power" class="nav-link">Work, Energy and Power</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#energy-e" class="nav-link">Energy, E.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#types-of-energy" class="nav-link">Types of Energy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#energy-conversions" class="nav-link">Energy Conversions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#hydroelectric-generator" class="nav-link">Hydroelectric generator</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#principle-of-conservation-of-energy" class="nav-link">Principle of Conservation of Energy</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#kinetic-energy-ek" class="nav-link">Kinetic Energy, Ek</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#potential-energy-ep" class="nav-link">Potential Energy, EP</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#gravitational-pe" class="nav-link">Gravitational P.E</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#power-p" class="nav-link">Power, P</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="physical-quantities-and-units">Physical Quantities and Units</h2>
+<p>The role of science is to develop a better
+understanding of the physical world around
+us and make the physical world better.</p>
+<p>Physics is an experimental science which
+involves the observing and measuring of a
+various phenomenon of nature. It is
+important that measurements be accurately
+taken and recorded. These measurements
+are then used o make connections between
+the measured phenomena is called a
+theory.</p>
+<p>The theory must then be tested
+experimentally so that it may either be
+verified or distorted.</p>
+<p>A physical quantity refers to a quantitative
+description of the physical phenomena. A
+physical quantity may be defined by</p>
+<pre><code>a) A procedure for measuring (eg.
+distance and time)
+b) A procedure for calculating (eg.
+speed v = !&quot;#$%&amp;'($&quot;)( )
+</code></pre>
+<p>Most physical quantities consist of a
+product of a numerical magnitude and a
+unit.</p>
+<h2 id="base-quantities-and-base-units">Base Quantities and Base Units</h2>
+<pre><code>There are seven base quantities and seven
+corresponding base units outlined by
+systemé International (S.I).
+</code></pre>
+<pre><code>Base Quantity Base Unit
+Mass, m Kilogram (kg)
+Length, l Metre (m)
+Time, t Second (s)
+Temperature, T Kelvin (K)
+Electric current, I Ampere (A)
+Amount of
+substance, n
+</code></pre>
+<pre><code>Mole (mol)
+</code></pre>
+<pre><code>Luminous intensity,
+Iv
+</code></pre>
+<pre><code>Candele (cd)
+</code></pre>
+<h2 id="the-mole">The Mole</h2>
+<pre><code>Is the amount of substance which contains
+as many elementary units (atoms/
+ions/molecules) as there are atoms in
+0.012kg of carbon – 12.
+The number of elementary units per mole is
+called the Avogadro constant , NA. it is the
+same for all the substances.
+</code></pre>
+<pre><code>NA = 6.02 × 1023 mol-^1
+</code></pre>
+<h2 id="derived-quantity-and-derived-units">Derived Quantity and Derived Units</h2>
+<pre><code>All other quantities are called derived
+quantities. There are obtained in
+accordance with a defined equation for the
+quantity which may involve
+a) One or more base quantities
+</code></pre>
+<pre><code>b) Base quantities and derived
+quantities
+c) Derived quantities
+</code></pre>
+<p>The corresponding derived units are
+obtained by the same mathematical
+operation used to obtain the derived
+quantity.</p>
+<p>Same derived quantity have no units and
+are called dimensionless quantities (eg.
+refractive index and relative density)</p>
+<pre><code>Derived Quantity Derived Unit
+Area A = L × B
+(rectangle)
+</code></pre>
+<pre><code>m × m = m^2
+</code></pre>
+<pre><code>Volume V = L×B×H
+(cuboid)
+</code></pre>
+<pre><code>m × m × m = m^3
+</code></pre>
+<p>Density 𝜌 = )<em> (^) )+,! = kg ms-^3
+Speed v = #$ )# = ms-^1
+Acceleration a =
+</em>-.
+$^
+)#"#</p>
+<h1 id="ms">^ = ms</h1>
+<ul>
+<li>(^2)
+Force F = ma Kg × ms-^2 = kgms-^2
+= Newton (N)
+Pressure P = / 0 )^1 $ = Nm-^2 or Pascal
+(Pa)
+Work W = F × g N × m = Nm or
+Joule (J)
+Power P =^23 </li>
+</ul>
+<h1 id="js">^ = Js</h1>
+<ul>
+<li>(^1) or Watt (W)</li>
+</ul>
+<h2 id="dimensional-analysis">Dimensional Analysis</h2>
+<pre><code>a) Dimensional analysis may be used to
+check the homogeneity of physical
+equations.
+</code></pre>
+<p>Example: Ek =^56 mv^2</p>
+<pre><code>L.H.S [J] = [Nm]
+= [kg.ms-^2 .m]
+= [kgm^2 s-^2 ]
+L.H.S = R.H.S
+Therefore, the equation is homogeneous
+</code></pre>
+<pre><code>R.H.S [kg][ms-^1 ]^2 = [kg][m^2 s^2 ]
+= [kgm^2 s-^2 ]
+b) P = 𝞺gh
+c) ∆Ep = mg∆h
+</code></pre>
+<p>d) 𝑠𝑝𝑒𝑒𝑑 𝑉= (^) ,^78 E= stress (/9:'(0:(%)
+𝞺= density ()*)
+e) Period T = 2𝜋 (^) ,,;
+f) Rate of heat flow, Ɵ$ = -^ +∆∆?∆Ɵ−
+𝑟𝑒𝑠𝑒𝑎𝑟𝑐ℎ
+g) S = u t +^56 a t^2
+Solutions
+b) P = 𝞺gh
+L.H.S Pascal
+= Nm-^2 = [kgms-^2 .m-^2 ]
+= [kgm-^1 s-^2 ]
+R.H.S = [kgm-^3 ][ms-^2 ][m]
+= [kgm-^1 s-^2 ]
+L.H.S = R.H.S
+Therefore, the equation is
+homogeneous
+c) ∆Ep = mg∆h
+L.H.S
+Joule = [Nm]</p>
+<pre><code>= [kgms-^2 .m]
+= kgm^2 s-^2
+</code></pre>
+<pre><code>R.H.S = [kg][ms-^2 ] [m]
+= kgm^2 s-^2
+</code></pre>
+<pre><code>L.H.S = R.H.S
+The equation is homogeneous
+</code></pre>
+<pre><code>d) N =,^7 (
+L.H.S
+Speed = ms-^1
+</code></pre>
+<pre><code>R.H.S
+= [^1 )
+</code></pre>
+<pre><code>&quot;$]
+[+,)&quot;%]^ =
+</code></pre>
+<pre><code>+,)#&quot;$ )&quot;$
++,)&quot;%^
+= +,)
+</code></pre>
+<pre><code>&quot;##&quot;$
++,)&quot;%^
+</code></pre>
+<pre><code>e) T = 2𝜋,B,
+</code></pre>
+<pre><code>L.H.S = [s] ?? R.H.S = [)[)#&quot;]$] = #^5 &quot;# = s
+</code></pre>
+<pre><code>f) C$ = -+0∆?∆D
+</code></pre>
+<h4 id="rhs">R.H.S =</h4>
+<pre><code>[ ]E)$F[+]
+[)]^
+= [Wm-^1 K-^1 ][m^2 ][km-^1 ]
+</code></pre>
+<p>Solve Below</p>
+<p>Research</p>
+<pre><code>!D
+!?^ is the temperature gradient across the
+sector concerned (unit = Km-^1 )
+K is the constant whose value depends on
+the material of the disc. It is called the
+coefficient of thermal conductivity of the
+material.
+Unit = Wm-^1 K-^1
+</code></pre>
+<pre><code>a) L.H.S = W
+R.H.S = [Wm-^1 K-^1 ] [m^2 ] [km-^1 ]
+= W
+L.H.S = R.H.S
+The equation is homogenous
+</code></pre>
+<pre><code>b) s = u t +^56 a 𝑡^6
+</code></pre>
+<pre><code>L.H.S = m
+R.H.S = [ms-^1 s] + [ms-^2 s-^2 ]
+= m
+L.H.S = R.H.S
+The equation is homogenous
+</code></pre>
+<pre><code>b) Dimensional analysis may be used in
+deriving certain equations.
+</code></pre>
+<pre><code>Example: In a particular experiment
+it was found that the period, T of a
+single pendulum depended on its
+length, l the acceleration due to
+gravity, g and the mass of the bob,
+m.
+</code></pre>
+<p>T = kda gb mc</p>
+<p>Equating the units</p>
+<p>[s]^1 = [m]a [ms-^2 ]b [kg]c</p>
+<p>[s]^1 = [m]a + b [s]-2b [kg]c</p>
+<p>a + b =0....(1)</p>
+<ul>
+<li>2b = 1....(2)à b = −^56</li>
+</ul>
+<p>c = 0....(3)</p>
+<p>sub for b in equation (1)</p>
+<p>a −^56 = 0</p>
+<p>a =^56</p>
+<h4 id="t-k-l">T = K 𝑙^</h4>
+<pre><code>#
+$𝑙 𝑔-
+</code></pre>
+<pre><code>#
+$ m^0
+</code></pre>
+<p>T = K (,;)</p>
+<pre><code>#
+$
+</code></pre>
+<h4 id="t-k">T = K ,,;</h4>
+<p>Question: Find an equation relating the rate</p>
+<p>of volume flow (*;) along a uniform capillary</p>
+<p>tube to its length (l), radius (r), the pressure
+difference (𝛽) between the ends of the tube
+and the liquid of viscosity (ƞ) which flows
+through the tube.</p>
+<p>G
+3 = Kr</p>
+<pre><code>a (H
+;)
+</code></pre>
+<p>b (^) ƞc ƞ - kgm- (^1) s- 1
+Equating Units
+)%</p>
+<h1 id="m">^ = [m]</h1>
+<p>a [^1 )"$
+) ]
+b [kgm- (^1) s- (^1) ]c
+m^3 s-^1 = [m]a [+,)
+"$#"$
+) ][kgm
+- (^1) s (^1) ]c
+m^3 s-^1 = [m]a^ [kgm-^2 s-^2 ]b [kgm-^1 s-^1 ]c^
+m^3 s-^1 = [m]%-'
+$&amp;
+[kg]IJ' [s]-^6 I-'
+therefore b + c = 0.....(1)</p>
+<ul>
+<li>2b – c = -1...(2)
+a – c – 2b = 3....(3)</li>
+</ul>
+<pre><code>b = - c
+</code></pre>
+<ul>
+<li>2(- c)-c = - 1
+2c - c = - 1
+C = - 1
+b + (- 1) = 0
+b = 1
+therefore a – (- 1) – 2 (1) = 3
+a + 1 – 2 = 3
+a – 1 = 3
+a = 4
+a = 4, b = 1, c = - 1</li>
+</ul>
+<pre><code>c) Dimensional analysis may also be
+used to help in working out solution
+problems.
+</code></pre>
+<pre><code>Example: Water is pumped through a
+garden hose at a rate of 15kg per min
+and exists the nozzle at 20 ms-^1.
+</code></pre>
+<p>Calculate the reaction force on the nozzle.</p>
+<p>Rate = 5KLM Speed = 20ms-^1</p>
+<p>Force = ma</p>
+<p>[N] = [kgms-^2 ]</p>
+<p>= [kgs-^1 ] [ms-^1 ]</p>
+<p>Force = !(!$)*)</p>
+<p>Force = !)!$ V</p>
+<p>Force = 5KLM+,# 20ms-^1</p>
+<p>= 5 kgms-^1</p>
+<p>= 5N</p>
+<h2 id="multiples-and-submultiples">Multiples and Submultiples</h2>
+<pre><code>Prefix Value Example
+Pico (p) 10 -^12 20pF = 20 × 10 -^12 F
+Nano (n) 10 -^9 700nm = 700× 10 -^9 m
+Micro (𝜇) 10 -^6 5 𝜇s = 5 × 10 -^6 s
+Milli (m) 10 -^3 47mg = 47 × 10 -^3 g
+Centi (c) 10 -^2 2.5cm = 2.5 × 10 -^2 m
+Deci (d) 10 -^1 2dl = 2 × 10 -^1 l
+Kilo (k) 103 25Kv = 25× 103 V
+Mega (M) 106 27MW = 27 × 106 W
+Giga (G) 109 60GHz = 60 × 109 Hz
+Tera (T) 1012 30 THz = 30 × 1012 Hz
+</code></pre>
+<h2 id="scalars-and-vectors">Scalars and Vectors</h2>
+<pre><code>Scalar quantities are those which are
+specified by their magnitude only.
+Example: Mass and Speed.
+Vector quantities are those which are
+specified by both magnitude and direction.
+Example: Displacement, Velocity,
+Momentum, Force, Impulse.
+</code></pre>
+<h2 id="addition-of-scalars-and-vectors">Addition of Scalars and Vectors</h2>
+<pre><code>Scalars are added by simply finding their
+arithmetic sum.
+When adding vectors both magnitude and
+direction must be considered.
+</code></pre>
+<pre><code>Example:
+Parallel Vectors
+</code></pre>
+<pre><code>Resultant, F R = 16 + 12
+= 28 N
+</code></pre>
+<pre><code>12N
+</code></pre>
+<pre><code>16N
+</code></pre>
+<ul>
+<li>ve + ve</li>
+</ul>
+<p><strong>Antiparallel Vectors</strong></p>
+<p>Resultant, F R = 16 + (-12)</p>
+<p>= 4N</p>
+<p>The resultant of vectors can also be found
+using:</p>
+<pre><code>a) Parallelogram of Vectors
+Vectors A and B are drawn from the
+same origin. A straight line is drawn
+parallel to A and another parallel to
+B to form a parallelogram. The
+resultant A and B is represented by
+the diagonal which passes through
+the origin.
+</code></pre>
+<pre><code>b) Triangle of Vectors
+Vectors A and B are drawn so that
+the head of A touches the tail of B.
+</code></pre>
+<pre><code>the triangle is completed by drawing
+the tail of A to the head of B. this
+represents the resultant of A + B.
+</code></pre>
+<pre><code>Perpendicular Vectors
+</code></pre>
+<pre><code>Resultant, Fp = √ 166 +     
+= 20N
+</code></pre>
+<pre><code>Direction Ɵ = tan-^1 (5L^6 )
+= 36.9^0
+</code></pre>
+<pre><code>12N 16N^
+</code></pre>
+<ul>
+<li>ve + ve^</li>
+</ul>
+<pre><code>B
+</code></pre>
+<pre><code>A
+</code></pre>
+<pre><code>A + B
+</code></pre>
+<pre><code>A + B
+</code></pre>
+<pre><code>A
+</code></pre>
+<pre><code>B
+</code></pre>
+<pre><code>12N
+</code></pre>
+<pre><code>16N
+</code></pre>
+<pre><code>Ɵ
+</code></pre>
+<h4 id="fr">FR</h4>
+<pre><code>12N 12N^
+</code></pre>
+<pre><code>16N
+</code></pre>
+<pre><code>Other Angles
+Ø Calculation
+Ø Scale diagram
+</code></pre>
+<p>FR^2 = 12^2 + 16^2 - 2. 12. 16 cos 120 (cos rule)</p>
+<p>= 400 – (-192)</p>
+<p>FR^2 = √ 592</p>
+<p>= 24.33 N = 24.3N</p>
+<p>/'
+PQR56M^ =</p>
+<pre><code>56
+#&quot;&amp;Ɵ^ (sin rule)^
+</code></pre>
+<p>Sin Ɵ = 6S^56 .UU. sin 120</p>
+<p>= 25.</p>
+<p>= 25.3^0</p>
+<p>Calculate the resultant force and direction
+for 12N and 16N force acting at 150^0 to
+each also by scale drawing.</p>
+<pre><code>FR^2 =16^2 + 12^2 – 2(16.12) cos
+= 40 0
+</code></pre>
+<pre><code>V. 651
+PQRUM^ =
+</code></pre>
+<pre><code>561
+#&quot;&amp;Ɵ^
+Sin Ɵ =^56 V×. 65 #&quot;&amp;U
+</code></pre>
+<pre><code>Ɵ = sin-^1 (0.7306)
+= 46.9^0
+= 47^0
+</code></pre>
+<pre><code>Scale: 1cm = 2n
+Length of FR = 4.
+Therefore resultant = 4.2 × 2 = 8.4 ~ 8N
+</code></pre>
+<h2 id="resolving-vectors">Resolving Vectors</h2>
+<pre><code>A vector, F can be considered to be the
+resultant of 2 vectors. These vectors are
+called components or resolves parts of the
+vector, F. there is an infinite number of
+pairs or vectors which can give the
+resultant, F. however, it is often most
+convenient to resolve the vectors into
+mutually perpendicular components.
+</code></pre>
+<p>12N (^) 12N
+16N
+1200</p>
+<h4 id="fr_1">FR</h4>
+<p>(^600) Ɵ</p>
+<h4 id="1500">1500</h4>
+<h4 id="fr_2">FR</h4>
+<pre><code>12N
+</code></pre>
+<pre><code>16N
+</code></pre>
+<pre><code>12N
+</code></pre>
+<pre><code>16N
+</code></pre>
+<p>(^150   )</p>
+<h4 id="fr_3">FR</h4>
+<p><strong>The horizontal component adjacent to the
+angle Ɵ, its given by</strong></p>
+<p><strong>cos Ɵ =</strong> 𝑭𝑭𝒙</p>
+<p>à <strong>Fx = F cos Ɵ</strong></p>
+<p><strong>The vertical component opposite to the
+angle Ɵ is given by</strong></p>
+<p><strong>Sin Ɵ =</strong>
+𝑭𝒚
+𝑭^</p>
+<p>à <strong>Fy = F sin Ɵ</strong></p>
+<p>Resultant, F = C𝐹𝑦^6 +𝐹𝑥^6</p>
+<p>= C(𝐹sinƟ)^6 +(𝐹 𝑐𝑜𝑠)^6</p>
+<p>= √𝐹^6 = F</p>
+<p>Therefore sin^2 Ɵ + cos^2 Ɵ = 1</p>
+<p>Example: Object on rough incline</p>
+<p>If the object is in equilibrium, then the
+resultant force of any two multiply
+perpendicular directions is zero.</p>
+<p><strong>Resolving Parallel to the Plane</strong></p>
+<p><strong>F = W sin Ɵ</strong></p>
+<pre><code>Resolving Perpendicular to the Plane
+R = W cos Ɵ
+</code></pre>
+<pre><code>Question: Given that the systems shown
+below are in equilibrium. Find the values of
+F and Ɵ.
+</code></pre>
+<pre><code>Correction (ii)
+If the particle is stationary, then
+Resultant vertical = Force = 0
+à F sin Ɵ + 15 sin30 = 12
+à F sin Ɵ = 12 – 15 sin30......(1)
+Resultant force = 0
+</code></pre>
+<ul>
+<li>
+<blockquote>
+<p>F cos Ɵ = 15 cos30......(2)</p>
+</blockquote>
+</li>
+</ul>
+<p>÷ (^2) //YZPPQRƟƟ =^56 5K-5K'9#^ #"&amp;UMUM
+Tan Ɵ = 0.
+Ɵ = 19.
+Sub Ɵ in equation 2
+Ɵ
+F</p>
+<h4 id="f-56-pqr5k5pqr-5-um">F =^56 - PQR5K5[PQR. 5 UM</h4>
+<h4 id="f-1375n-13-n">F = 13.75N = 13. N</h4>
+<p>Correction</p>
+<p>For equilibrium; resultant force = 0</p>
+<p>i.e. F sin Ɵ × 0.3 = 20 sin30 × 0.</p>
+<p>F sin Ɵ = SMK sin 30.....(1)</p>
+<p>Resultant horizontal force = 0</p>
+<p>à F cos Ɵ = 20 cos30....(2)</p>
+<p>÷ (^2) //PQRYZPƟƟ =
+*+
+%PQRUM
+6MYZPUM^
+Tan Ɵ =^6 U tan 30
+Tan Ɵ = 0.</p>
+<h4 id="21">Ɵ = 21.</h4>
+<pre><code>Sub or Ɵ in 1 or 2
+F = 18.6N
+</code></pre>
+<pre><code>Question: For a particle of mass 2kg rests
+on a smooth surface which rests at an angle
+of 45^0 to the horizontal. A horizontal force P
+is applied to the particle to keep it
+stationary. Find the value of P and the
+normal reaction of the surface of the
+particle.
+</code></pre>
+<pre><code>Resolving perpendicular to the plane
+R = W cos 45^0 + P sin 45^0
+</code></pre>
+<pre><code>Resolving parallel to the plane
+P cos 45 = W sin 45^0
+</code></pre>
+<pre><code>P = \YZPPQRSKSK
+</code></pre>
+<h4 id="p-w">P = W</h4>
+<h4 id="p-2980">P = 2(9.80)</h4>
+<h4 id="p-196-n">P = 19.6 N</h4>
+<h2 id="errors">Errors</h2>
+<p>There are two types of errors which may
+occur in the measurement of the physical
+quantity.</p>
+<pre><code>Ø Random Error
+Ø Systematic Error
+</code></pre>
+<p><strong>Random Error</strong></p>
+<p><strong>When repeated measurements</strong> of the
+same quantity <strong>give rise to different values</strong>.
+A random error is said to have occurred.</p>
+<p>These result in a scatter of readings about a
+mean value and have an equal chance of
+being positive or negative.</p>
+<p><strong>Random errors may be caused by</strong></p>
+<pre><code>a) Inability of the observer to repeat a
+procedure exactly.
+Example 1: Variation in reaction
+time in starting and stopping a
+stopwatch.
+</code></pre>
+<pre><code>Example 2: Interpretation of the
+actually position of the pointer on
+the scale.
+</code></pre>
+<pre><code>b) Sensitivity of the measuring
+instrument
+Example 1: The mechanics of the
+moving coil meter may cause the
+pointer to settle in different
+</code></pre>
+<pre><code>positions even though the same
+value is being measured.
+</code></pre>
+<pre><code>c) A particular measurement not
+being reproducible.
+Example 1: When measuring how
+temperature falls with time for a
+particular substance, a value missed
+cannot be retrieved even though the
+experiment is repeated.
+</code></pre>
+<pre><code>Random errors may be revealed by
+repeating observations of a particular
+quantity. If an average is then calculated for
+a measurement, then the random error
+may be reduced.
+</code></pre>
+<pre><code>Systematic Error
+A systematic error changes all
+measurements of a particular quantity
+equally.
+Systematic errors result in all the readings
+taken being faulty in one direction.
+Systematic errors may be caused by
+a) An instrument having a zero error
+Example: A disconnected ammeter
+which reads 0.2 A will result in all
+measurements being 0.2 A too large.
+</code></pre>
+<pre><code>Example 2: A micrometer screw
+gauge which is not at zero when it is
+fully closed.
+</code></pre>
+<pre><code>Incorrect calibration of an instrument.
+</code></pre>
+<p>Example: A liquid in glass thermometer
+which does not have 100 equal divisions
+between 0 and 100.</p>
+<p>The <strong>observer</strong> persistently <strong>carrying out the
+wrong reaction.</strong></p>
+<p>Example:</p>
+<p>Systematic errors may be eliminated or
+corrected by:</p>
+<pre><code>a) Varying all conditions of the
+experiment
+Example: Using a different meter
+</code></pre>
+<pre><code>b) Suitable mathematical treatment of
+the observation
+Example: Adding\subtracting the
+zero error.
+</code></pre>
+<h2 id="precision-and-accuracy">Precision and Accuracy</h2>
+<p>An <strong>accurate experiment</strong> is one in which the
+<strong>systematic error is relatively small.</strong></p>
+<p>A <strong>precise experiment</strong> is one in which the
+<strong>random error is relatively small</strong>.</p>
+<pre><code>Measure value is close to the actual value
+à small s accurate.
+</code></pre>
+<pre><code>Large scatter of values à large random
+error and hence is not precise.
+</code></pre>
+<pre><code>Measured value is far from actual value à
+large systematic error and hence the
+experiment is not accurate
+</code></pre>
+<pre><code>Small scatter of values à small random
+error and hence it is precise.
+systematic error and hence the experiment
+</code></pre>
+<h2 id="uncertainties">Uncertainties</h2>
+<pre><code>Suppose a reading, x is obtained of a quality
+whose true value is x, then
+x = x ± e
+e is called the absolute uncertainty in the
+measurement.
+</code></pre>
+<pre><code>Fractional uncertainty, P = 𝒙𝒆 Usually f &lt;&lt; 1
+</code></pre>
+<pre><code>Percentage uncertainty, P = 𝒆𝒙 × 100.
+Usually P &lt;&lt; 100.
+</code></pre>
+<h2 id="uncertainty-in-compound">Uncertainty in Compound</h2>
+<h2 id="quantities">Quantities</h2>
+<pre><code>a) Sum, S
+S = a + b
+∆S = ∆a + ∆b
+</code></pre>
+<pre><code>b) Difference, D
+D = a – b
+∆D = ∆a + ∆b
+</code></pre>
+<pre><code>c) Product, P
+P = ab
+∆P = ∆a.b + a. ∆ b
+</code></pre>
+<h4 id="hh-ii-i-i">∆HH = ∆%I%.I + %%I.∆^ I</h4>
+<h4 id="hh-i_">∆HH = ∆%% + ∆I_</h4>
+<h4 id="p-aa-bb-p">∆ P = ( ∆𝒂𝒂 + ∆𝒃𝐛 ) × P</h4>
+<p>Note:</p>
+<p>P = an</p>
+<p>∆H
+H^ = n</p>
+<pre><code>∆%
+%^
+</code></pre>
+<p>∆p = n ∆%% × P</p>
+<p>OR</p>
+<p>∆p = nQn –^1 ∆a</p>
+<p>÷ p ∆HH = &amp;C</p>
+<p>,"# (^) ∆%
+%&amp;. %^
+= n ∆%%
+<strong>d) Quotient, Q</strong>
+Q = %I
+Q = ab-^1
+∆Q = ∆ab-^1 + a × - b-^2 ∆b
+∆C
+C^ =
+∆%I"#
+%I"#^ +
+% × - I"$
+%I"#^ , ∆b^
+∆C
+C^ =
+∆%
+%^ -^
+∆I
+I^
+<strong>Cannot subtract uncertainties</strong>
+à ∆CC = ∆%% + ∆II</p>
+<h4 id="q-ii-q">∆Q = (∆%% + ∆II) Q</h4>
+<pre><code>Questions 1 :
+Calculate the Young modulus, E, of a steel
+wire and its uncertainty given:
+</code></pre>
+<h2 id="e">E =</h2>
+<h4 id="_1">! #$%</h4>
+<h4 id="_2">&amp;'(!</h4>
+<pre><code>Length of wire, l = (3.025 ± 0.005) m
+Dia. of wire, d = (0.84 ± 0.01) mm
+Mass, m = (5.000 ± 0.002) kg
+Extension, e = (1.27 ± 0.02) mm
+g = (9.81 ± 0.01) ms-^2
+E =
+</code></pre>
+<pre><code>∆E = (∆))+ ∆,,+∆;;+ ∆((+    6 ∆!!) × E
+</code></pre>
+<pre><code>=
+= × 109 Nm-^2
+</code></pre>
+<p>= × 109 Nm-^2</p>
+<p>E = ( ± ) × 1011 Nm-^2</p>
+<p><strong>Question 2:</strong></p>
+<p>A simple pendulum experiment to
+determine if the following values used were
+obtain.</p>
+<p>L = (1.150 ± 0.005) m</p>
+<p>T = (2.16 ±0.01) s</p>
+<p>Find g and its uncertainty</p>
+<p>T = 2𝜋 (^) ,,;
+g =
+( )"^
+g =
+( )"^
+g = ms-^2
+∆g = (^ +^ ) g
+= [ + (^ )]
+= ms-^2
+g = ( ± ) ms-^2
+Try :</p>
+<ol>
+<li>June 2008 # 4</li>
+<li>June 2003 # 1 (c)</li>
+</ol>
+<h2 id="types-of-forces">Types of Forces</h2>
+<pre><code>a) Contact Forces are produced by the
+physical interaction between bodies.
+i. Applied Forces- pushing/ pulling
+force exerted by one object or
+another.
+ii. Frictional Forces - the force which
+tends to oppose the relative motion
+between objects or surfaces.
+iii. Tension Force- force acting in a
+string or a wire or a spring which is
+held tout.
+iv. Normal Force- is a force exerted on
+a object which is resting on a surface
+or a fixed support are normal to the
+surface.
+</code></pre>
+<pre><code>b) Non- Contact Forces are produced
+by the interaction of fields or fields
+of force.
+i. Electric Forces- are produced by the
+interaction of two or more electric
+fields. Example: Between two points
+charges.
+*Maybe one of attraction or
+repulsion.
+ii. Magnetic Forces- which is produced
+by the interaction of the 2 or more
+magnetic fields. Example: Between 2
+permanent magnetics, Between 2
+permanent magnets and one
+current carrying conductor, Between
+2 current carrying conductors.
+*Forces maybe of attraction and
+repulsion.
+iii. Nuclear Force- very strong forces of
+attraction which holds the particles
+of the nucleus together.
+</code></pre>
+<pre><code>iv. Gravitational Forces- are produced
+by the interaction of gravitational
+fields around masses and are very
+weak unless at least one of the
+objects has a very large mass.
+Example: The earth
+The gravitational force exerted by
+the earth an object is called the
+weight of the object.
+W = mg
+m = mass of object (kg)
+g – gravitational strength (Nkg-^1 )
+</code></pre>
+<pre><code>Nkg-^1 = kg ms-^2 , kg-^1
+= ms-^2
+Therefore, gravitational field
+strength is sometimes called the
+acceleration due to gravity
+</code></pre>
+<h2 id="up-thrust-on-a-body-in-fluid">Up thrust on a Body in Fluid</h2>
+<pre><code>Consider a cylinder of height, l and cross-
+sectional area, A totally submerged in a
+fluid on density, 𝜌. such that its upper
+surface as at a depth, h from the surface of
+a fluid and its lower surface is at a depth, h 2
+from the surface of the fluid.
+</code></pre>
+<p>At the depth, h the pressure p is given by
+𝜌gh</p>
+<p>F = P× A à F = 𝜌gh A</p>
+<p>At a particular depth the pressure on the
+sides the cylinder are the same and
+therefore the result horizontal force is zero.</p>
+<p>The pressure difference of P 2 – P 1 produces
+a resultant upward force or up thrust on the
+cylinder.</p>
+<p>Up thrust, u = F 2 – F 1</p>
+<p>F = 𝜌gh A à U = 𝜌gh 2 A – 𝜌gh, A</p>
+<p>=𝜌gA (h 1 – h 2 )</p>
+<p>But h 2 – h 1 = height of cylinder, e</p>
+<p>à u = 𝜌gAl</p>
+<p>But Al = volume of cylinder</p>
+<p>= volume of fluid displaced, V</p>
+<p>à u = 𝜌gv à v = A (h 1 – h 2 ) = Al</p>
+<p>But 𝜌v = mass of fluid displaced, m 𝜌 = )*</p>
+<p>à u = mg</p>
+<p>But mg = weight of fluid displaced, W</p>
+<p>i.e. u = W</p>
+<p>i.e. Up trust = weight of fluid displaced.</p>
+<h2 id="archimedes-principle">Archimedes Principle</h2>
+<pre><code>A body which is partly or totally
+submerged in a fluid experiences am up
+thrust which is equal to the weight of the
+fluid displaced.
+</code></pre>
+<h2 id="principle-of-flotation">Principle of Flotation</h2>
+<pre><code>A floating body displaces its own weight on
+the fluid which it floats.
+For a floating body:
+Up thrust = Weight of body
+</code></pre>
+<pre><code>i.e. Weight of fluid = weight of body
+displaced
+</code></pre>
+<h2 id="frictional-forces">Frictional Forces</h2>
+<pre><code>The force that opposes or tends to oppose
+the relative motion between 2 bodies is
+called the force of friction.
+Frictional forces are presents in the relative
+motion between 2 solids, in liquids, in gases
+and solid object moving through liquids and
+gases.
+</code></pre>
+<pre><code>Whenever there is relative motion between
+bodies work is done against friction and the
+work done is converted into thermal
+energy.
+</code></pre>
+<h2 id="frictional-forces-in-solids">Frictional Forces in Solids</h2>
+<pre><code>Consider an object of weight, W resting on
+a rough horizontal surface, A gradually
+</code></pre>
+<p>increasing force it applies to the object
+parallel to the surface.</p>
+<p>p = applied force</p>
+<p>w = weight</p>
+<p>R = normal reaction</p>
+<p>F = frictional force</p>
+<p><strong>Initially</strong> as P is increased, the object does
+not move and is therefore in equilibrium
+which implies that</p>
+<h2 id="f-p">F = P</h2>
+<p>If the object remains in <strong>equilibrium as P
+increases, then the frictional force also
+increases.</strong></p>
+<p>At a particular value for P the object just
+starts to move at this point the <strong>frictional
+forces is a maximum and is called the
+limiting frictional force.</strong> The object is said
+to be <strong>in limiting equilibrium.</strong></p>
+<p>The frictional fore which acts while <strong>the
+object is still stationary is called static
+friction.</strong></p>
+<pre><code>When the object is in limiting equilibrium ,
+the friction force is directly proportional to
+the normal reaction.
+F ∝ R
+F = R m – coefficient of friction
+In general F ≤ mR
+</code></pre>
+<pre><code>When there is relative motion between the
+surfaces , the frictional force is called sliding
+or dynamic or kinetic friction.
+(The nature of the frictional force is at the
+points contact). The nature of the frictional
+force results from the forces of attraction
+between the points of contacts between
+the 2 surfaces while they rest on each
+other.
+</code></pre>
+<h2 id="laws-of-friction">Laws of Friction</h2>
+<pre><code>1 st – The friction force between two
+surfaces opposes the relative motion or
+attempted motion between the surfaces.
+</code></pre>
+<pre><code>2 nd – The frictional force is dependent of
+the area of contact between the surfaces.
+</code></pre>
+<pre><code>3 rd – The limiting frictional force is directly
+proportional to the normal reaction F∝ R, F
+= mR
+</code></pre>
+<h2 id="viscous-forces">Viscous Forces</h2>
+<pre><code>Viscous/drag force is the frictional force in
+fluids. i.e. in liquids and gases.
+</code></pre>
+<pre><code>P
+</code></pre>
+<pre><code>R
+</code></pre>
+<pre><code>F
+W
+</code></pre>
+<p>In liquids, the viscous force arises from the
+intermolecular forces of attraction between
+adjacent layers of liquid. Example: A liquid
+which flows through a channel is considered
+to flow in layers. The layer or contact with
+the channel is at rest. This layer exerts
+intermolecular forces of attraction on the
+layer adjacent to it and so on. The result is
+that the layer at the center of the channel
+flows with the greatest speed.</p>
+<p>In gases, the viscous force arises as a result
+of the interchange of molecules between
+adjacent layers of flow of gas.</p>
+<p>When an object moves through a fluid, <strong>the
+viscous drag force exerted on the object
+depends on:</strong></p>
+<pre><code>i. The shape of the object
+ii. The viscosity of the object
+iii. The velocity of the object.
+</code></pre>
+<p><strong>F</strong> ∝ <strong>V - laminar conditions</strong></p>
+<p><strong>F</strong> ∝ <strong>V</strong>^2 <strong>– turbulent conditions</strong></p>
+<h2 id="static-equilibrium">Static Equilibrium</h2>
+<p><strong>Moments of a force or torque</strong></p>
+<p>Definition: <strong>The moment of a force about an
+axis is the product of the force and the</strong></p>
+<pre><code>perpendicular distance of its lines action
+from the axis.
+</code></pre>
+<pre><code>Moment of force about axis =
+Force × Perpendicular distance of
+force from axis
+T = F × r
+</code></pre>
+<pre><code>Notes:
+Ø Units: Nm
+Ø A couple consists of two forces
+which are equal in magnitude and
+opposite in direction and which do
+not act along the same line so that
+they produce rotation.
+</code></pre>
+<pre><code>Torque of couple = (F × AB) + (F × BC)
+= F (AB + BC)
+= F × AC
+= F × perpendicular
+distance between
+the forces.
+</code></pre>
+<h4 id="v">V</h4>
+<h4 id="v_1">V</h4>
+<h4 id="v_2">V</h4>
+<h4 id="v_3">V</h4>
+<pre><code>F
+</code></pre>
+<pre><code>A B
+</code></pre>
+<pre><code>C
+</code></pre>
+<pre><code>F
+</code></pre>
+<h2 id="principle-of-moments">Principle of Moments</h2>
+<p>For rigid body in equilibrium, the algebraic
+sum of the moments of the forces about
+any axis is zero.</p>
+<h2 id="conditions-for-equilibrium">Conditions for Equilibrium</h2>
+<ol>
+<li>The resultant force is any two
+    mutually perpendicular directions is
+    zero.</li>
+<li>The resultant torque about any axis
+    is zero</li>
+</ol>
+<h2 id="triangle-of-forces">Triangle of Forces</h2>
+<p>If 2 forces acting on a point can be
+represented in magnitude and direction b
+the sides of a triangle take in order, then
+the 3 forces would produce a resultant of
+zero.</p>
+<p>Note:</p>
+<ol>
+<li>The converse of this is true</li>
+<li>The rule can be extended to a
+    polygon of forces.</li>
+</ol>
+<pre><code>*The resultant of F, and F 2 is equal in
+magnitude but opposite in direction to F 3
+and therefore the resultant is zero.
+</code></pre>
+<p>A (^) F (^1) B
+C
+F 3
+F 2</p>
+<h2 id="3motions">3.Motions</h2>
+<h2 id="kinematics">Kinematics</h2>
+<ol>
+<li>Distance, x
+    Distance, x travelled by an object
+    from a point is the length of the
+    path taken by the object from the
+    point.</li>
+</ol>
+<p>Note:</p>
+<pre><code>a) Units: metre (m)
+Scalar Quantity
+</code></pre>
+<ol>
+<li>Displacements: The distance moved
+    in specified direction or straight line
+    distance from start to finish.</li>
+</ol>
+<p>Note:</p>
+<pre><code>a) Units: (m)
+Vector Quantity
+</code></pre>
+<ol>
+<li>Speed, v: The distance moved per
+    unit time.</li>
+</ol>
+<p>Note:</p>
+<pre><code>a) Speed, v: !?!$
+Unit: ms-^1
+Scalar Quantity
+Average speed=39$%;^ !&quot;#$%&amp;'(39$%; $&quot;)(^ $:%*(;;(!
+</code></pre>
+<ol>
+<li>Velocity, V: Is the change of
+    displacement per unit time.</li>
+</ol>
+<pre><code>Note:
+</code></pre>
+<pre><code>a) Velocity, V = !#!$
+Units: ms-^1
+Vector Quantity
+Average velocity=39$%;$9$%;^ !&quot;#c;%'()(&amp;$ $&quot;)(
+If acceleration is constant , then
+Average Velocity =.J 6 *
+</code></pre>
+<pre><code>where :
+u – initial velocity
+v – final velocity
+</code></pre>
+<ol>
+<li>Acceleration, a: Is the change in
+    velocity per unit time
+Note:</li>
+</ol>
+<pre><code>a) Acceleration, a = !*!$
+Units: ms-^2
+Vector
+If the velocity of an object is
+uniform, then the velocity change is
+zero and hence the acceleration is
+zero.
+If velocity increases, then the object
+is said to be accelerating and if the
+velocity decreases then the object is
+said to be decelerating.
+An object is said to be moving with
+uniform acceleration if the velocity
+change is constant per unit time.
+</code></pre>
+<pre><code>a = *-$.
+</code></pre>
+<pre><code>v = final velocity
+u = initial velocity
+t = time
+</code></pre>
+<h2 id="displacement-time-st-graph">Displacement- Time (s.t) Graph</h2>
+<p>The s.t graph shows how the displacement
+of an object from a particular position (the
+origin) varies with time.</p>
+<p><strong>The gradient of the s.t graph gives the
+velocity of the object.</strong></p>
+<p>If the velocity is constantly changing, then
+the gradient of the tangent at a point gives
+the velocity of the object at that point (i.e.
+instantaneous velocity).</p>
+<p>If the velocity is constant over a given time
+interval, then the gradient is constant, and
+the velocity maybe calculated by finding the
+gradient over the time interval.</p>
+<p>Positive or negative gradient indicates
+positive or negative velocity which indicates
+the <strong>direction</strong> of motion of the object.</p>
+<pre><code>Positive or negative displacements indicates
+the position of the object relative to the
+origin.
+When v and s have the same sign, they
+move away from the origin.
+When v and s have different signs, they
+move towards the origin.
+</code></pre>
+<pre><code>From A velocity increased gently to B
+From B velocity increased uniformly to C
+From C the decrease velocity occurs to D
+From D to E the velocity is zero, the
+distance is S 1
+From E to F velocity is negative and slowly
+increases.
+From F to G the velocity is negative,
+uniformly increases.
+From G to H, the displacement is negative,
+velocity is negative, and uniformly
+increasing.
+</code></pre>
+<p>From H to I, the displacement is negative,
+velocity is negative and decreases gently.</p>
+<p>From I to J, the displacement is negative,
+velocity positive and slowly/gently
+increasing.</p>
+<p>From J to K, the displacement is negative,
+velocity decreasing becomes zero.</p>
+<h4 id="note-on-graph-from">NOTE ON GRAPH FROM</h4>
+<pre><code>Ø At A, gradient = 0 à v = 0 i.e.
+particle is at rest
+Ø Aà B, gradient increases à v is
+increasing
+Ø B à C gradient constant à v
+constant, acceleration = 0
+Ø C à D gradient decreasing à
+velocity decreasing, i.e. object
+accelerates
+Ø A à D s positive, v positive object
+moving away from origin.
+Ø D à E gradient = 0, velocity = 0, i.e.
+object at rest.
+Ø E à F gradient increases à velocity
+increases, i.e. object accelerates
+Ø F à G gradient constant à velocity
+= constant, accelerating
+Ø E à G s positive, v negative à
+object moves towards origin
+At G, object is at origin and moving
+with constant velocity.
+Ø G à H object passed origin and
+moving in opposite direction,
+gradient constant à v constant à
+acceleration = 0
+Ø H à I gradient decreasing à
+velocity is decreasing à
+deceleration
+</code></pre>
+<pre><code>Ø G à I s is negative, v is negative à
+object moving away from origin
+At I; gradient = 0 à velocity = 0
+therefore object is momentarily at
+rest.
+Ø I à J gradient increases à velocity
+increases à i.e. object accelerating
+Ø J à K, gradient increases à velocity
+decreases i.e. object decelerating
+Ø I à K s is negative, and v is positive
+à object moving towards origin
+At K gradient = 0 à velocity = 0i.e.
+object is at rest
+</code></pre>
+<pre><code>Total Displacement = 0 à Avg velocity = 0
+Total Distance Travelled = 2s 1 + 2s 2
+</code></pre>
+<h2 id="velocity-time-graphs">Velocity – Time Graphs</h2>
+<pre><code>The velocity time graphs show how the
+velocity of an object varies with time.
+The gradient of the velocity time graph
+gives the acceleration of the object;
+a) If the acceleration of the object is
+constantly changing, then the
+acceleration at a point (i.e.
+instantaneous acceleration) is the
+gradient at the tangent of the point.
+b) If the acceleration of the object is
+uniform over a given time interval,
+then the gradient is constant and
+acceleration is determined by
+calculating the gradient over the
+time interval.
+</code></pre>
+<pre><code>The area under the velocity time
+graph in a given time interval gives
+</code></pre>
+<pre><code>the distance travelled by the object
+in that time.
+</code></pre>
+<pre><code>The negative and positive signs for
+velocity indicate the direction in
+which the object is travelling.
+The negative and positive signs for
+acceleration indicates the direction
+in which the object is changing.
+</code></pre>
+<pre><code>When both a and v are in the same
+direction, v is positive/increases
+When both a and v are in opposite
+direction, v decreases
+</code></pre>
+<p>A à B – gradient constant à acceleration
+constant, object accelerates uniformly from
+rest to velocity, v.</p>
+<pre><code>B à C gradient decreasing à a decreasing,
+velocity is still increasing but at a lower
+rate.
+</code></pre>
+<pre><code>A à C a positive and v positive à velocity
+increasing to V 2
+</code></pre>
+<pre><code>C à D gradient = 0 à velocity constant (a =
+0)
+</code></pre>
+<pre><code>D à E gradient constant à acceleration
+constant, a is negative and v is positive à v
+decreasing, object decelerates uniformly
+from V 2 to rest.
+</code></pre>
+<pre><code>E à F velocity = 0 i.e. object at rest
+</code></pre>
+<pre><code>F à G gradient constant à acceleration
+constant, a is negative and v is negative à
+velocity increasing, object accelerates
+uniformly from rest to V 3
+</code></pre>
+<pre><code>G à H gradient = 0 à a = 0 i.e. velocity
+constant (V 3 )
+</code></pre>
+<pre><code>H à I gradient constant à ‘a’ constant,
+acceleration positive, velocity negative à
+velocity is decreasing, object decelerates
+uniformly from V 3 to rest.
+</code></pre>
+<pre><code>Total distance travelled = A 1 + A 1
+Total displacement = A 1 + (-A 2 )
+</code></pre>
+<h2 id="uniformly-accelerated-motion-on-a">Uniformly Accelerated Motion on a</h2>
+<h2 id="straight-line">Straight Line</h2>
+<h2 id="equations-of-motion">Equations of Motion</h2>
+<ol>
+<li>By definition: a = .-$*</li>
+</ol>
+<pre><code>at = v – u
+v = u + at......(1)
+</code></pre>
+<ol>
+<li>Average velocity = #$
+    Iff a = constant Average
+    velocity=.J 6 <em>^
+    à #$ = .J 6 </em>^
+    S = (.J 6 *^ ) t........(2)</li>
+<li>Sub t = *-%. from 1 in 2</li>
+</ol>
+<h4 id="s-j-6-">S = (<em>J 6 .) (</em>-%.)</h4>
+<h4 id="s">S = *</h4>
+<pre><code>$&quot; .$
+6 %^
+</code></pre>
+<pre><code>2as = v^2 – u^2
+</code></pre>
+<pre><code>V^2 = u^2 + 2as...........(3)
+</code></pre>
+<ol>
+<li>Sub v = u + at from 1 in 2
+    S = (.J(. 6 J%$)) t
+    S = ut+^56 at^2 .........(4)</li>
+<li>Sub u = v – at from 1 in 2
+    à s = P<em>-%$ 6 J</em>Q t
+    S = vt - 56 at^2 .......(5)</li>
+</ol>
+<p>Also consider the velocty time graph for an
+object of uniform acceleration, a as its
+velocity changes from u to v in a time
+interval, t causing the object to move
+through a displacement, s</p>
+<pre><code>Acceleration, a = gradient of v – t graph
+</code></pre>
+<pre><code>= *-$.^ = 0
+</code></pre>
+<pre><code>a = *-$.^
+</code></pre>
+<pre><code>à v = u + a.....(1)
+</code></pre>
+<pre><code>Distance travelled, s = Area under the
+velocity time graph
+</code></pre>
+<pre><code>s = .J 6 *^ t......(2)
+</code></pre>
+<pre><code>Hence ( 3 ) (4) (5) will follow
+Question : A particle is projected vertically
+upwards with a velocity of 50ms-^1 in a
+uniform gravitational field where g = 9.81
+ms-^2. Neglecting air resistance.
+Calculate:
+a) The max. height obtained
+b) The time taken to reach max. height
+c) Time taken for the particle to move
+upwards and return using s = ut +^56
+at^2
+Sketch the velocity time graphs and the
+speed time graphs for the motion of this
+particle and show the important values.
+</code></pre>
+<p><strong>Solutions</strong></p>
+<pre><code>a) Maximum height obtained for u = 50
+g = 9.81 Using:
+</code></pre>
+<pre><code>V^2 = u^2 + 2as
+</code></pre>
+<h4 id="s_1">S = *</h4>
+<pre><code>$- .$
+6 %^ =
+</code></pre>
+<pre><code>KM-M
+6 ([.V5)^ = 127 m to 3 sf^
+</code></pre>
+<pre><code>b) Time taken= v = u + at
+*-%. = t
+</code></pre>
+<pre><code>t = 5.09s = 5.1s
+</code></pre>
+<pre><code>c) S = ut +^56 at^2
+S = (ut +^56 at) t
+</code></pre>
+<p>*When neglecting air resistance, the
+distance upwards is the same distance
+downwards.</p>
+<h2 id="projectiles">Projectiles</h2>
+<pre><code>Consider the motion of particle when
+projected in a uniform gravitational field in
+any direction. The following terms describe
+the projectile motion:
+</code></pre>
+<ol>
+<li><strong>The Trajectory-</strong> is the path
+    described by the particle.</li>
+<li><strong>The range-</strong> is the distance between
+    the point of projection and the point
+    where the trajectory meets any
+    plane through the point of the
+    projection.</li>
+<li><strong>The angle of projection-</strong> is the angle
+    between the direction of projection
+    and the horizontal plane through
+    the point of projection.</li>
+</ol>
+<pre><code>Consider a particle projected in a uniform
+gravitational field without air resistance.
+The particle is projected with a velocity, u at
+an angle Ɵ to the horizontal. At time, t the
+particle has a velocity, v and is at the angle
+∝ to the horizontal. The vertical and
+horizontal displacements at this time are x
+and y respectively.
+</code></pre>
+<p>In projectile motion, the vertical and
+horizontal motion are considered
+separately since the acceleration due to
+gravity acts vertically. The initial velocity, u
+is therefore resolved into its vertical and
+horizontal components.</p>
+<p>The horizontal components of velocity
+remain constant throughout motion.
+However, the vertical component of
+velocity is affected by g and therefore
+changes with time. The equations of
+motions can therefore be used when
+considered the vertical motion of the
+projectile.</p>
+<p>Notes:</p>
+<ol>
+<li><strong>Horizontal velocity</strong> therefore
+    remains constant Vh = ucosƟ</li>
+<li><strong>Vertical velocity</strong> therefore v = u + at
+    à v = sinƟ – gt
+    V^2 = u^2 + 2as
+    V^2 = u^2 sin^2 Ɵ – 2 gy
+    V = √𝑢^6 𝑠𝑖𝑛^6 𝜃− 2 𝑔</li>
+<li><strong>Resultant velocity</strong> v = C𝑉d^6 + 𝑉*^6
+    = C𝑢^6 𝑐𝑜𝑠^6 Ɵ+ 𝑢^6 𝑠𝑖𝑛^6 Ɵ− 2 𝑔𝑦
+    = C𝑢^6 (𝑐𝑜𝑠^6 Ɵ+𝑠𝑖𝑛^6 Ɵ)− 2 𝑔𝑦
+    V = C𝑢^6 − 2 𝑔𝑦</li>
+<li><strong>The direction of the resultant</strong>
+    <strong>velocity</strong> = tan-^1 (GG/
+       0</li>
+</ol>
+<h4 id="_3">)</h4>
+<ol>
+<li><strong>Horizontal distance,</strong> x = vt</li>
+</ol>
+<pre><code>x = u cos Ɵ. t
+</code></pre>
+<ol>
+<li><strong>Vertical distance,</strong> s = u t +^56 a t^2
+    y = u sin Ɵ t - 56 gt^2</li>
+<li><strong>Path</strong>
+    Horizontal motion: x = u cos Ɵ t....(1)
+    Vertical motion: y = u sin Ɵ. t - 56 gt^2</li>
+</ol>
+<pre><code>Sub for t from 1 in 2:
+</code></pre>
+<p>y = U sinƟ. .YZP? Ɵ - (^65) , (eYZP? D)^2
+y = x tan Ɵ - U?
+$
+6    .$ '9#$ Ɵ^
+y = -,#('
+$Ɵ
+6    .$^. x
+(^2) + x tan Ɵ
+is of a parabola path due to the
+equation resembling a quadratic i.e.
+ax^2 + bx + c where a = -,#('
+$Ɵ
+6    .$ , b =
+tan Ɵ, c = 0.
+The gravitational force is always
+parallel to the horizontal velocity
+making it move in a parabolic path.</p>
+<ol>
+<li><strong>Maximum height</strong>
+    v^2 = u^2 + 2as
+    At max. height v = 0
+    à 0 = (U sin Ɵ)^2 + 2(-g) h
+    Therefore h =.</li>
+</ol>
+<pre><code>$ #&quot;&amp;$ Ɵ
+6 ,^
+</code></pre>
+<ol>
+<li><strong>Time taken to reach maximum</strong>
+    <strong>height</strong>
+    V = u + at
+    At max. height v = 0
+    à Ɵ = u sin Ɵ - gth
+    th = .PQR,Ɵ</li>
+<li><strong>Time taken for the whole journey</strong></li>
+</ol>
+<pre><code>S = ut +^56 at^2
+When the object returns s = 0
+à 0 = U sin Ɵ. T - 56 gt^2
+T = 0 or T =^6.^ ,#&quot;&amp;D
+</code></pre>
+<pre><code>T = 2th
+</code></pre>
+<ol>
+<li><strong>Horizontal range</strong>
+    x = vt
+    R = U cos Ɵ. T
+    = U cos Ɵ.^6 .PQR, Ɵ</li>
+</ol>
+<h4 id="_4">=.</h4>
+<pre><code>$ × 6 PQRD '9#D
+,^
+</code></pre>
+<h4 id="r">R =.</h4>
+<pre><code>$ #&quot;&amp; 6 D
+,^
+</code></pre>
+<p><strong>Maximum horizontal range occurs when</strong>
+sin 2Ɵ = 1</p>
+<p>à 2Ɵ = 90^0</p>
+<p>Ɵ = 45^0</p>
+<p>Question 1 : Neglect air resistance and take</p>
+<p>g =9.81ms-^2</p>
+<ol>
+<li>A particle is projected with a velocity
+    of 98ms-^1 at an angle of projection at
+    300 to the horizontal.
+    Calculate:
+a) The greatest height obtained
+b) The time of flight
+c) The horizontal range
+d) The velocity when the particle 1st
+    reaches a height of 65m</li>
+</ol>
+<pre><code>Answers:
+a) The greatest/maximum height
+attained,
+V^2 = u^2 + 2as
+0 = (98 cos30)^2 + 2(-9.81ms-^2 ) h
+Therefore h^2 = − ([V^ #&quot;&amp;UM)
+</code></pre>
+<pre><code>$
+6 (-[.V5)#&quot;$^
+h = 122.38 m ~ 122m
+</code></pre>
+<pre><code>b) Time of flight, v = u + at
+At maximum height v = 0
+0 = (98ms-^1 × sin 30) – (9.81) th
+th = -[V)#
+</code></pre>
+<pre><code>&quot;# ×PQRUM
+</code></pre>
+<ul>
+<li>[.V5^
+th = 4.99</li>
+</ul>
+<pre><code>time for whole journey
+2th = 4.99 × 2
+9.99s ~ 10.0s
+</code></pre>
+<pre><code>c) The horizontal distance = x t
+x = u cos Ɵ. t
+= (98ms-^1 ) cos 30 × 9.989
+= 847.7m ~ 848m
+The horizontal range, R = u cos Ɵ. T
+= u cos Ɵ 6 .^ #&quot;&amp;,^ D
+</code></pre>
+<pre><code>=.
+</code></pre>
+<pre><code>$ × 6 PQRDYZPD
+,^
+R =.
+</code></pre>
+<pre><code>$ PQR 6 D
+,^ =
+</code></pre>
+<pre><code>[V)#&quot;#  6 PQR 6 (UM)
+[.V5^
+= 847.8m ~ 848m
+</code></pre>
+<pre><code>d) Vertical velocity at 65m
+</code></pre>
+<pre><code>Horizontal component is constant is 98
+cos30^0.
+V^2 = u^2 + 2as
+</code></pre>
+<p>Vv^2 = (98sin30)^2 + 2(9.81) (65)</p>
+<p>Resultant, ve = C𝑉<em>^6 + 𝑉</em>^6</p>
+<p>=</p>
+<p>C( 98 𝑠𝑖𝑛 30 )^6 − 2 ( 9. 81 )( 65 )+( 98 cos 30 )</p>
+<p>= 91.26ms-^1</p>
+<p>= 91.3 ms-^1</p>
+<p>∝ = tan-^1 (**/
+0</p>
+<h4 id="2160">) = 21.6^0</h4>
+<p>Question 2: A particle is projected
+horizontally from the top of a building, 80m
+above ground level with a velocity of 30ms-</p>
+<p>(^1). Calculate:
+a) The time taken to reach ground level
+b) The horizontal distance travelled
+c) The velocity of the particle just
+before it hits the ground.
+Solutions:
+a) Time taken to reach ground level
+S = u t +^56 a t^2</p>
+<ul>
+<li>80 = 0. t +^56 (-9.81) t^2</li>
+</ul>
+<p>t = ,^6 [(.VMV5) = √ 16. 31 𝑠</p>
+<p>= 4.04s</p>
+<pre><code>b) The horizontal distance travelled
+S = v t
+S = 30 × 4.04
+</code></pre>
+<pre><code>= 121.2m
+</code></pre>
+<pre><code>c) Velocity just before it hits the
+ground
+V^2 = u^2 + 2as
+= 0^2 + 2(9.81) (80)
+Vv = √ 15. 69. 6
+= 39.6ms-^1
+</code></pre>
+<pre><code>Horizontal velocity
+Vh = 30ms-^1
+V = C( 1569. 6 )^6 +( 30 )^6
+= 49.7ms-^1
+</code></pre>
+<pre><code>∝ = tan-^1 (GG/
+0
+</code></pre>
+<h4 id="_5">)</h4>
+<pre><code>= tan-^1 \f^6 ([.V5UM)(VM)]
+= 52.8^0 ~ 530
+</code></pre>
+<pre><code>Question 3: A particle is projected at an
+angle of elevation at 60^0 with a velocity of
+50ms-^1 from the top of a cliff of height 100m
+from ground level. Calculate
+a) Maximum height obtained from
+base of cliff.
+b) Time taken to reach ground level
+c) Horizontal distance travelled
+</code></pre>
+<pre><code>Solution
+a) Maximum height, V^2 = u^2 + 2as
+= (u sin Ɵ)^2 + 2(-g) h
+h =.
+</code></pre>
+<pre><code>$-#&quot;&amp;$ Ɵ
+6 ,^
+= (KMPQRLM)
+</code></pre>
+<pre><code>$
+6 ([.V5)^
+= 95.56m + 100m
+= 195.56m
+</code></pre>
+<pre><code>b) Time taken to reach ground level
+</code></pre>
+<p>S = u t^56 a t^2</p>
+<pre><code>= u sin Ɵ. T - 56 g T^2 – 100
+= 50 sin 60t- 56 (9.81) t^2
+T = %^.^ ,#&quot;&amp;Ɵ = 4.905 t^2 – 43.3t – 100=0
+</code></pre>
+<pre><code>= - b
+√I$-S%'
+6 %^
+</code></pre>
+<pre><code>= - (-43.3) ± f(-SU.U)
+</code></pre>
+<pre><code>$-S(S.[MK)(-5MM)
+6 (S.[MK)^
+</code></pre>
+<h4 id="433">= 43.3 ±</h4>
+<pre><code>f(-SU.U)$-S(S.[MK)(-5MM)
+6 (S.[MK)^
+</code></pre>
+<h4 id="suu-v5l5-s">= SU.U[^ ±.V5L.^5 .[S</h4>
+<pre><code>= 10.75 or - 1.9
+</code></pre>
+<pre><code>c) 267.5m
+</code></pre>
+<h2 id="terminal-velocity">Terminal Velocity</h2>
+<pre><code>Motion in a uniform gravitational field
+with air resistance
+Consider an object released from rest
+from a very high point in a uniform
+gravitational field where the air
+resistance in not neglible.
+</code></pre>
+<pre><code>U = up thrust
+W = weight
+F = drag force
+F ∝ V = luminar condition
+F ∝ V^2 turbulent conditions
+Resultant Force, FR = W -U – F
+Initial – the object is at rest i.e v = 0 à F = 0
+à FR = W – U
+</code></pre>
+<pre><code>As the velocity, v increases, the drag force,
+f increases, and this causes the resultant
+force, FR to decrease. The acceleration of
+the object therefore decreases (.F = ma),
+the velocity of the object still increases but
+now at a lower rate. As the velocity
+increases further, the drag force, F also
+</code></pre>
+<pre><code>g v
+</code></pre>
+<pre><code>U F
+</code></pre>
+<pre><code>W
+</code></pre>
+<p><strong>increases, and the FR decreases further.</strong>
+This continues until the resultant force; <strong>F =
+0</strong> and hence the <strong>acceleration = 0</strong>. The
+object then falls with a constant velocity
+called the <strong>terminal velocity</strong>.</p>
+<p>Terminal Velocity= 0 à W – U – F = 0</p>
+<p>à W = U + F</p>
+<p>Question: Consider an object thrown
+vertically upwards with a velocity, v in a
+uniform gravitational field. The object
+reaches its maximum height and on return
+attains terminal velocity. Draw and explain
+the velocity time graph for the motion of
+the object.</p>
+<p>Shaded regions must be equal because
+velocity going up is equal to velocity going
+down.</p>
+<h4 id="a-1-a-2">A 1 = A 2</h4>
+<pre><code>Distance up = Distance Down
+T 1 &lt; T 2
+Starter time up then come down
+Downward motion
+FR = W – F – U
+</code></pre>
+<h2 id="upward-motion">Upward Motion</h2>
+<pre><code>Initially velocity is maximum and hence the
+drag force, F is a maximum. The resultant
+force, FR is maximum.
+</code></pre>
+<pre><code>This force opposes the motion and
+therefore the velocity decreases.
+</code></pre>
+<pre><code>As the object moves upwards the velocity
+decreases and the drag force, F decreases
+and hence the magnitude of FR decreases
+(which implies that acceleration decreases)
+</code></pre>
+<h2 id="at-maximum-height">At Maximum Height</h2>
+<pre><code>Velocity = 0
+Drag force, F = 0
+</code></pre>
+<h2 id="downward-motion">Downward Motion</h2>
+<pre><code>As the velocity of the object increases from
+0, the drag force, F also increases and the
+resultant force, FR decreases. This continues
+until the object reaches terminal velocity.
+</code></pre>
+<h2 id="dynamics">Dynamics</h2>
+<h2 id="newtons-laws-of-motion">Newton’s Laws of Motion</h2>
+<p><strong>Newton’s First Law</strong></p>
+<p>A body continues in its state of rest or of
+uniform motion in a straight line (i.e.
+uniform velocity unless acted upon by a
+resultant force).</p>
+<p>Note:</p>
+<p>This law suggests that a body which is at
+rest requires a resultant force for motion
+and if a body is moving a resultant force is
+required to increase/ decrease the
+magnitude of the velocity or change the
+direction of the velocity.</p>
+<p>The <strong>inertia</strong> of a body is the resistance to
+change in motion and therefore Newton’s
+First Law is sometimes called the law of
+inertia.</p>
+<p>A body of large mass requires a large force
+to change its motion and therefore <strong>the
+mass of a body is a measure of its inertia</strong>.</p>
+<pre><code>Mass Weight
+Is the measure of
+the inertia of a
+body.
+</code></pre>
+<pre><code>Is the force which
+gravity exerts on a
+body.
+Unit: kg Unit: N
+Scalar Vector
+</code></pre>
+<pre><code>Constant Varies according to
+the gravitational
+field strength.
+Fundamental
+quantity
+</code></pre>
+<pre><code>Derived quantity
+</code></pre>
+<pre><code>Newton’s Second Law
+The rate of change of momentum of a body
+is directly proportional to the resultant
+force acting on the body and takes place in
+the direction of the force
+</code></pre>
+<pre><code>Notes:
+</code></pre>
+<pre><code>F ∝ ∆(∆)*I)
+</code></pre>
+<pre><code>If the velocity is constant: F ∝ V ∆∆)$
+</code></pre>
+<pre><code>If the velocity mass is constant: F ∝ m ∆∆*$
+</code></pre>
+<pre><code>Or if velocity changes uniformly
+∆v = v – u
+</code></pre>
+<pre><code>F ∝ )^ (*$-.)
+</code></pre>
+<pre><code>Acceleration, a = ∆∆.$ or *-$.
+</code></pre>
+<pre><code>F ∝ ma
+F = kma; k is constant of proportionality
+</code></pre>
+<pre><code>By Definition
+The newton is the force which produces a
+acceleration of 1ms-^1 when it acts on a mass
+of 1kg
+1N = 1kgms-^2
+à K = 1
+</code></pre>
+<p>F = ma</p>
+<p>Resultant force and acceleration are always
+in the same direction.</p>
+<p>Definition</p>
+<p>The resultant force exerted on a body is
+defined as its rate of change of momentum.</p>
+<p><strong>Newton’s Third Law</strong></p>
+<p>When object A exerts a force on B, object B
+exerts an equal and opposite force of an
+object A.</p>
+<p>Notes:</p>
+<p>The forces are equal in magnitude and
+opposite in direction and they act on
+different bodies.</p>
+<p>Examples:</p>
+<p><strong>Satellite Orbit</strong></p>
+<p>F 1 - gravitational force of attraction which
+the earth exerts on the moon.</p>
+<pre><code>F 2 – gravitational force of attraction which
+the moon exerts on the earth.
+F 1 and F 2 are equal in magnitude, opposite
+in direction and they act on different
+bodies.
+</code></pre>
+<pre><code>Walking
+</code></pre>
+<pre><code>F 1 – force which shoe/ foot exerts on the
+ground
+F 2 – force which ground exerts on
+shoe/foot.
+</code></pre>
+<pre><code>Rockets
+</code></pre>
+<h4 id="f-1">F 1 –</h4>
+<h4 id="f-2">F 2 –</h4>
+<pre><code>Sprinklers
+</code></pre>
+<pre><code>ROCKET
+</code></pre>
+<h2 id="linear-momentum">Linear Momentum, 𝞺</h2>
+<p>Definition,</p>
+<p><strong>The linear momentum of a body is defined
+as the product of its mass and velocity.</strong></p>
+<p>𝞺 = mv</p>
+<p>Notes:</p>
+<p>Units: kgms-^1 or Ns</p>
+<p>Vector quantity whose direction is the same
+0 as that of velocity of the body.</p>
+<h2 id="principle-of-conservation-of-linear">Principle of Conservation of Linear</h2>
+<h2 id="momentum">Momentum</h2>
+<p>Consider an object A of mass, m and initial
+velocity, u colliding with an object B of
+mass, m 2 and initial velocity, u 2. The objects
+collide for a short time interval, t and after
+collision, A and B move off with velocities V,
+and V 2 respectively.</p>
+<p>Newton’s Third Law FA = - FB</p>
+<p>Newton’s Second Law =</p>
+<p>)#(<em>#$-^ .#) = -)$^ (</em>$$-^ .$)</p>
+<p>M 1 V 1 – M 1 U 1 = -M 2 V 2 + M 2 U 2</p>
+<p>M 1 U 2 + M 2 U 2 = M 1 V 1 + M 2 V 2</p>
+<p>total initial = total final</p>
+<p>momentum momentum</p>
+<pre><code>The principle of conservation of linear
+momentum states that if no external
+forces act on a system then the total linear
+momentum is a given direction remains
+constant.
+</code></pre>
+<h2 id="classification-of-collisions">Classification of Collisions</h2>
+<pre><code>Inelastic Collisions – Are those in which
+kinetic energy is not conserved. The kinetic
+energy is usually is usually converted to
+heat or sound.
+A completely inelastic collision is one in
+which the base stick together after impact.
+The loss of kinetic energy is large but not
+complete.
+</code></pre>
+<pre><code>Elastic Collisions – are those in which
+kinetic energy is conserved example: gas
+molecules make elastic collisions with each
+other.
+Consider a perfectly elastic head on
+collision between 2 bodies A and B whose
+masses are m 1 and m 2 respectively and
+initial velocities u 1 and u 2 respectively. After
+collisions A and B move with velocities v 1
+and v 2 respectively.
+</code></pre>
+<pre><code>By the Principles of Conservation of Linear
+Momentum: M 1 U 1 + M 2 U 2 = M 1 V 1 + M 2 V 2
+</code></pre>
+<pre><code>K.E:^56 mv^2
+</code></pre>
+<pre><code>For elastic collisions:
+5
+6 M^1 U^1
+</code></pre>
+<p>(^2) +^5
+6 M^2 U^2
+(^2) =^5
+6 M^1 V^1
+(^2) +^5
+6 M^2 V^2
+(^2)</p>
+<p>From equation 1:</p>
+<p>M 1 U 1 – M 1 V 1 = M 2 V 2 + M 2 U 2</p>
+<p>M 1 (U 1 – V 2 ) = M 2 (V 2 – U 2 )......3</p>
+<p>From equation 2:</p>
+<p>M 1 U 12 - M 1 V 12 = M 2 V 22 - M 2 U 22</p>
+<p>M 1 (𝑈 56 - 𝑉 56 ) = 𝑀 2 (𝑈 66   − 𝑉 66 )....... 4</p>
+<p>÷ 3 i#(e#</p>
+<pre><code>$ - G#$)
+i 5 (e#$ - G#)^ =
+</code></pre>
+<pre><code>i 6 (e$$ - G$$)
+i 6 (e$$ - G$)^
+</code></pre>
+<p>U 1 – U 2 = V 2 – V 1</p>
+<p>U 1 – U 2 = - V 2 – V 1</p>
+<p>Velocity of A relative to B on approach =
+velocity of A relative to B on separation</p>
+<p>*Works for only perfectly elastic collisions.</p>
+<h2 id="impulse">Impulse</h2>
+<p>Definition</p>
+<p><strong>The impulse of a force is the product of a
+force and the time for which it acts</strong></p>
+<p><strong>Impulse = Ft</strong></p>
+<p>Note:</p>
+<p>According to Newton’s Second Law</p>
+<p>F = )*-$). à Ft = mv – mu</p>
+<p>à Impulse = Change in momentum</p>
+<p>Units: kgms-^1 or Ns</p>
+<pre><code>The term impulse is usually associated with
+a force which acts for a short time.
+However, it can be applied to smaller forces
+which act over a longer period.
+</code></pre>
+<pre><code>When an object undergoes a momentum
+change by an applied force. The applied
+force maybe large for a short time interval
+and still produces the same momentum
+change.
+</code></pre>
+<pre><code>Example:
+</code></pre>
+<ol>
+<li>Jumping with knees bent reduce
+    force</li>
+<li>Air- bag increases the time interval
+    for impact therefore decreasing the
+    force.</li>
+</ol>
+<pre><code>Force on a Rocket
+</code></pre>
+<pre><code>Consider a very small-time intervals ∆t, such
+that the force can be considered constant.
+</code></pre>
+<pre><code>Impulse = F ∆ t
+</code></pre>
+<p>Momentum change, ∆p = F ∆ t</p>
+<p>Total momentum change = Are under f.t
+graph</p>
+<p><strong>Head on Collisions</strong></p>
+<p>Notes:</p>
+<p>At any instant during collision, the forces on
+the cars are equal on magnitude and
+opposite in direction. This means that the
+graphs for the cars will have the same
+shape and size.</p>
+<p>The areas for car A and car B are equal in
+magnitude but opposite in sign which
+means the impulse for both cars are equal
+in magnitude but opposite direction i.e. the
+momentum change for the cars are equal in
+magnitude and opposite in direction and
+hence the total momentum change for
+collision is zero i.e. momentum is
+conserved.</p>
+<p>Consider a body moving with a constant
+velocity, u and a force is applied for a short
+time, ∆t producing a momentum change ∆p
+with the final velocity of the car being V.
+Sketch the momentum time graph for the
+following:</p>
+<pre><code>P = Ft + mu
+Is of y = mx + c à straight line
+</code></pre>
+<pre><code>of momentum time = rate of change of
+momentum
+= force exerted acc. to
+Newton’s 2nd Law
+</code></pre>
+<h2 id="circular-motion">Circular Motion</h2>
+<pre><code>Consider a particle of mass, m moving along
+an arc AB of a circle with center, O and
+radius, r with a constant speed, v in a time
+interval, t
+</code></pre>
+<h2 id="angular-displacements">Angular Displacements, Ɵ</h2>
+<p>The angular displacements are the angle
+subtended to the center of the circle by an
+arc of the circle.</p>
+<p>Angular displacements = 0:':%!".#^ ;(&amp;,d$</p>
+<p>Ɵ = :#</p>
+<p>Notes:</p>
+<p><strong>Angular displacement</strong> is the radian (rad)</p>
+<p><strong>Period, T</strong> is the time taken for one complete
+revolution.</p>
+<p><strong>Frequency, F</strong> is the number of revolutions
+per second</p>
+<p>Notes:</p>
+<p>S.I Units of frequency is the Hertz (Hz)</p>
+<p>1 Hz = 1 revolution per second</p>
+<p>By definition f =^53</p>
+<p><strong>Angular Velocity, W (omega)</strong></p>
+<pre><code>The angular velocity is defined as the
+change of angular displacement per unit
+time
+</code></pre>
+<pre><code>W = !!$Ɵ or ∆∆D$
+</code></pre>
+<pre><code>Notes:
+S.I units rads-^1
+If the particle moves with a constant speed
+as above then:
+</code></pre>
+<pre><code>W = Ɵ$
+</code></pre>
+<pre><code>If the particle moves through an angular
+displacement of 2𝜋 rads in the periodic
+time, T.
+</code></pre>
+<pre><code>à W =^63 j
+5
+3 = f à^ W = 2𝜋f^
+</code></pre>
+<pre><code>Speed, V
+</code></pre>
+<pre><code>By definition: v = #$
+</code></pre>
+<pre><code>S = rƟ à v = :D$
+D
+$^ = W à^ v = rw^
+</code></pre>
+<h2 id="centripetal-acceleration-and">Centripetal acceleration and</h2>
+<h2 id="antripetal-force">Antripetal force</h2>
+<pre><code>As the particle moves from A to B, the
+speed is constant, however the velocity
+changes since the direction of the motion
+changes and velocity is a vector quantity. If
+</code></pre>
+<p>the velocity changes then by definition the
+particle is accelerating.by Newton’s 2nd law
+(F = ma) there must also be a resultant
+force which is in the direction of the
+acceleration.</p>
+<p>The magnitude of the velocity is unchanged,
+and the acceleration and force must be
+perpendicular to the travel at any instant.
+The accelerated is directed towards the
+center of the circular path and is called the
+centripetal acceleration. The resultant force
+is in the same direction and is called the
+centripetal force.</p>
+<pre><code>Centripetal Acceleration Centripetal Force
+a = *
+</code></pre>
+<pre><code>$
+:^ F =
+</code></pre>
+<pre><code>)*$
+√^
+</code></pre>
+<p>a = w^2 r (^) F = mw^2 √
+a = vw F = mvw
+Notes:
+A centripetal force is not a force in the
+system, but it is the fore which is required
+to keep an object moving in a circular path.
+The centripetal force is provided by the
+resultant of forces acting towards the
+center of the circular path.
+Examples:
+<strong>Conical Pendulum</strong>
+If the object is moving in a horizontal circle,
+then there is no vertical motion
+Resultant vertical force = 0
+i.e. T cos Ɵ = mg
+the horizontal component of T acts towards
+0 and provides the centripetal force which
+is required to keep the object moving in a
+circular path
+i.e. T sin Ɵ = )<em>
+$
+:^ or mw
+(^2) r or mvw
+</em><em>Orbiting Satellite</em>*</p>
+<p>The gravitational force of attraction which
+the earth exerts on the moon provides the
+centripetal force which is required to keep
+the moon in a circular orbit around the
+earth.</p>
+<p><strong>Vehicle Moving Around a Bend</strong></p>
+<p>The centripetal force which is required to
+keep a vehicle moving with a speed, v in an</p>
+<p>area of radius, r is given by )*</p>
+<p>$
+3 , this
+centripetal force is provided by the
+frictional force, f which acts towards the
+center of the circular path. The frictional
+force however has a maximum value (ƞ𝑅). If</p>
+<pre><code>the centripetal force needed exceeds the
+maximum frictional force then the vehicle
+slides and follows an arc of a larger radius
+thus reducing the centripetal force which is
+required.
+</code></pre>
+<pre><code>Banked Tracks
+</code></pre>
+<pre><code>Consider a vehicle of mass, m moving
+around a banked track inclined at an angle,
+Ɵ in a circular track of a horizontal radius, r
+and center, O.
+If there is no vertical motion, then
+Resultant vertical force = 0
+à R 1 cos Ɵ + R 2 cos Ɵ = mg
+(R 1 + R 2 ) cos Ɵ = mg......1
+If there is no slipping along the slope, then
+the components of R 1 and R 2 acting towards
+O provide the centripetal force.
+</code></pre>
+<pre><code>à R 1 sin Ɵ + R 2 sin Ɵ = )*
+</code></pre>
+<pre><code>$
+:^
+</code></pre>
+<pre><code>(R 1 + R 2 ) sin Ɵ = )*
+</code></pre>
+<pre><code>$
+: ...........2^
+</code></pre>
+<h4 id="2">÷ 2</h4>
+<pre><code>(k 5     J k 6 ) #&quot;&amp;Ɵ
+(k 5     J k 6 ) '9#Ɵ^ =
+</code></pre>
+<pre><code>)*$
+1
+23
+</code></pre>
+<p>Tan Ɵ =*</p>
+<pre><code>$
+:,^
+</code></pre>
+<p>Ɵ = tan-^1 (*</p>
+<pre><code>$
+:,)^
+</code></pre>
+<p>If v and r are known, then the banking angle
+can be calculated.</p>
+<p><strong>Object Tied to a String Moving With a
+Constant Speed In a Vertical Circle.</strong></p>
+<p>At A: )*</p>
+<pre><code>$
+:^ = TA^ –^ mg à^ TA^ =
+</code></pre>
+<pre><code>)*$
+:^ + mg (max)^
+</code></pre>
+<p>At B: )*</p>
+<pre><code>$
+:^ = TB^ à^ TB^ =
+</code></pre>
+<pre><code>)*$
+:^
+</code></pre>
+<p>At C: )*</p>
+<pre><code>$
+:^ = Tc^ + mg à^ Tc^ =
+</code></pre>
+<pre><code>)*$
+:^ -^ mg (min)^
+</code></pre>
+<p><strong>Rollercoaster in a Circular Motion</strong></p>
+<p>At A: )*^4</p>
+<pre><code>$
+:^ = RA^ –^ mg à^ RA^ =
+</code></pre>
+<pre><code>)* 4 $
+:^ + mg (max)^
+</code></pre>
+<pre><code>At B: )*^5
+</code></pre>
+<pre><code>$
+:^ = RB^ à^ RB =
+</code></pre>
+<pre><code>)* 4 $
+:^
+</code></pre>
+<pre><code>At C: )*^6
+</code></pre>
+<pre><code>$
+:^ = RC^ + mg à^ RC^ =
+</code></pre>
+<pre><code>)* 4 $
+:^ –^ mg (min)^
+</code></pre>
+<pre><code>In order for the rollercoaster to be safe, it
+must be able to move through a complete
+circle. The condition for that is that RC ≥ 0
+</code></pre>
+<pre><code>The minimum speed at C occurs when RC= 0
+</code></pre>
+<pre><code>à )*^6
+</code></pre>
+<pre><code>$
+:^ –^ mg = 0^
+VC = C𝑟𝑔
+</code></pre>
+<pre><code>The conservation of energy can be used to
+determine the minimum speed of entry into
+the loop.
+i.e. K.E at A = K.E at C + Gain in Gravitational
+P.E
+</code></pre>
+<pre><code>=^56 m𝑣l^6 +𝑚𝑔 ( 2 𝑟)
+</code></pre>
+<pre><code>𝑉 06 = 𝑣l^6 + 4rg
+</code></pre>
+<pre><code>= (C𝑟𝑔)^2 + 4rg
+</code></pre>
+<pre><code>= 5rg
+</code></pre>
+<pre><code>VA = C 5 𝑟𝑔
+</code></pre>
+<pre><code>Object Moving Over the Arc of a Circle
+</code></pre>
+<p>)*$
+:^ = mg –^ R^</p>
+<p>When the speed is increased, the normal
+reactant is decreased to obtain a greater
+centripetal force. At a critical speed the
+normal reactants zero and all the weight is
+used as a force hence you experience a
+feeling of weightlessness.</p>
+<p>Resultant Force, Ma = Mg – R</p>
+<p>For a free-falling body a = g</p>
+<p>à mg = mg – R</p>
+<p>R = 0</p>
+<p>Person feels sense of weightlessness</p>
+<h2 id="gravitation">Gravitation</h2>
+<h2 id="gravitational-field">Gravitational Field</h2>
+<p>A gravitational field is said to exist at a point
+if a gravitational force is exerted on a mass
+placed at the point.</p>
+<p>Notes:</p>
+<pre><code>Ø Gravitational forces are always
+forces of attraction
+Ø Gravitational forces are mostly
+negliable unless atleast one very
+massive body is involved. Example:
+the earth
+Ø The direction of the gravitational
+field at a point is the direction of the
+force exerted on a mass at that
+point.
+</code></pre>
+<h2 id="gravitational-field-strength-g">Gravitational Field Strength, g</h2>
+<pre><code>The gravitational field strength at a point in
+gravitational field is the force exerted per
+unit mass at that point.
+</code></pre>
+<pre><code>g = i/
+</code></pre>
+<pre><code>Notes:
+Ø Units: Nkg- 1
+Ø g is a vector quantity whose
+direction is the same as that of the
+force exerted.
+Ø From Newton’s second law (a = )/)
+and therefore the gravitational force
+exerted at a mass at a point in the
+gravitational field produces an
+acceleration which is numerically
+equal to the gravitational field
+strength and hence g is sometimes
+called the acceleration due to
+gravity. Furthermore, the units are
+the same for gravitational field
+strength and acceleration.
+</code></pre>
+<h2 id="newtons-law-of-gravitational">Newton’s Law of Gravitational</h2>
+<h2 id="field-strength">Field Strength</h2>
+<p>A force of attraction between 2 particles is
+directly proportional to the product of the
+masses and inversely proportional to the
+square of their separation.</p>
+<p>F ∝ )#:)$$</p>
+<p>F = m):#$)$</p>
+<p>F – force of attraction (N)</p>
+<p>M 1 an M 2 – point masses (kg)</p>
+<p>r – separation (m)</p>
+<p>G – Universal Gravitational Constant</p>
+<p>= 6.67 × 1011 nm^2 kg-^2</p>
+<p>*June 2000 Paper for next week</p>
+<h2 id="gravitational-field-strength-of-a">Gravitational field strength of a</h2>
+<h2 id="point-mass">Point Mass</h2>
+<p>By Newton’s Law of Universal Gravitation.</p>
+<p>F = m:i$^2</p>
+<p>By definition</p>
+<p>g = i/ à</p>
+<p>the gravitational field strength at a distance,
+r from a particle of mass, M is given by:</p>
+<p>g =</p>
+<p>(^782)
+1 $
+)^
+g = mi:$</p>
+<h2 id="gravitational-field-strength-for">Gravitational Field Strength for</h2>
+<h2 id="the-earth">The Earth</h2>
+<pre><code>Re: g = mi:$
+</code></pre>
+<pre><code>Outside: g = m:i$^9
+</code></pre>
+<p>g ∝ (^) :^5 $
+Surface: g =
+$%#</p>
+<h3 id="_6">&amp;#"^</h3>
+<pre><code>Inside: g = mi:$
+</code></pre>
+<pre><code>M = p × SU𝜋𝑟U à g =
+</code></pre>
+<pre><code>$ ×(×$%)&amp;%
+</code></pre>
+<h3 id="_7">&amp;"^</h3>
+<pre><code>Assuming uniform = g ∝ r
+</code></pre>
+<p>Note:</p>
+<p>For small distances above the earths
+surface, the gravitational field strength, g
+maybe considered constant.</p>
+<p>On the earth’s surface: g = m:i^9
+9 $</p>
+<p>Consider a small distance, h above the
+earth.</p>
+<p>Gravitational field strength, g^1 = (:mi^9
+9 Jd)$</p>
+<p>,#
+,^ =</p>
+<pre><code>&amp;'#
+()#*+)&quot;
+&amp;'#
+)#&quot;
+</code></pre>
+<p>,#
+,^ =</p>
+<pre><code>mi 9
+(: 9 Jd)$^ ×^
+</code></pre>
+<pre><code>: 9 $
+mi 9
+</code></pre>
+<p>= (::^9
+9 Jd</p>
+<h4 id="2_1">)^2</h4>
+<p>,#
+,^ =^ (</p>
+<pre><code>5
+</code></pre>
+<p>5 J (^109)</p>
+<h4 id="2_2">)^2</h4>
+<p>h &lt;&lt; rE à (^) :d 9 à 0
+,#
+,^ à^1
+,#
+,^ ≈^1
+g^1 ≈ g</p>
+<h2 id="gravitation-and-planets-in-circular">Gravitation and Planets in Circular</h2>
+<h2 id="orbits">Orbits</h2>
+<pre><code>A gravitational force of attraction which the
+sun exerts on the planet provides the
+centripetal force which is required to keep
+the planet in a circular orbit.
+</code></pre>
+<pre><code>i.e. mw^2 r = mi:$^2
+</code></pre>
+<pre><code>w =^63 j à Sj
+</code></pre>
+<pre><code>$:
+3 $^ =
+</code></pre>
+<pre><code>mi
+:$^
+</code></pre>
+<pre><code>T^2 = Sj
+</code></pre>
+<pre><code>$
+m)𝑟
+</code></pre>
+<h4 id="u">U</h4>
+<pre><code>Sj
+m)^ = constant à^ T
+</code></pre>
+<p>(^2) ∝ r (^3)
+Kepler’s Law</p>
+<h2 id="geostationary-orbits">Geostationary Orbits</h2>
+<p>A satellite above the equator moving in the
+earth’s direction of rotation with an orbital
+period of 24hrs will always be at the same
+point above the earth’s surface. This
+satellite is called a geostationary satellite
+and is said to be in a geostationary orbit</p>
+<p>These satellites are used to relate
+telephone signals from one point on the
+earth to the other.</p>
+<p>When a satellite is to be placed in a
+geostationary orbit; it is first carried to the
+required height and once it is given the
+necessary tangential velocity by firing
+rocket engines that are parallel to the
+rocket surface.</p>
+<p>Questions: A satellite of mass 200kg is to be
+placed in a geostationary orbit. Given that
+the mass of the earth is 6.0 × 104 kg and its
+radius is 6.4 × 106 m. Calculate:</p>
+<ol>
+<li>Height above the earth’s surface to
+    which the satellite is to be taken</li>
+<li>The required tangential velocity at
+    this height</li>
+</ol>
+<pre><code>Gravitational force of attraction provides
+the centripetal force which keeps the
+satellite in orbit.
+</code></pre>
+<pre><code>Mw^2 r = mi:$^2
+</code></pre>
+<pre><code>W =^63 j Sj
+</code></pre>
+<pre><code>$:
+3 $^ =
+</code></pre>
+<pre><code>m)
+:$^
+</code></pre>
+<pre><code>r^3 = mi^3
+</code></pre>
+<pre><code>$
+Sj$^
+</code></pre>
+<pre><code>r = ,mi^3
+</code></pre>
+<pre><code>$
+Sj$
+</code></pre>
+<pre><code>%
+</code></pre>
+<pre><code>= ,(L.Ln^ ×5M
+</code></pre>
+<pre><code>&quot;##)(L.M×5M$*+,)(6SS.L×LM)$
+Sj$
+</code></pre>
+<pre><code>%
+</code></pre>
+<pre><code>= 7.567 × 1022 m
+= 7.57 × 1022 m
+= 4.229 × 107 m
+Gravitational force of attraction provides
+the centripetal force which keeps the
+satellite in orbit.
+</code></pre>
+<pre><code>)*$
+:^ =
+</code></pre>
+<pre><code>mi 2
+:$^ or v = wr^
+V^2 = m): =^6 j: 3
+</code></pre>
+<pre><code>V = ,m):
+</code></pre>
+<pre><code>3.1 × 103 ms-^1
+</code></pre>
+<h2 id="work-energy-and-power">Work, Energy and Power</h2>
+<pre><code>Work, W
+</code></pre>
+<p>Work done by the force whose points of
+application moves through a displacement
+in the direction of the force is the product
+of the force and displacement.</p>
+<p>W = Fs</p>
+<p>Notes:</p>
+<pre><code>Ø The S.I unit of work is The Joule (J)
+Ø The joule is the work done when the
+force of 1W moves its point of
+application through a distance of 1m
+in the direction of the force.
+1 J = 1Nm
+Ø Consider a force, F applied to an
+object causing the object to move
+through a displacement, s at an
+angle Ɵ to the direction of the force.
+</code></pre>
+<p>F sin Ɵ is perpendicular to s and therefore
+does not work.</p>
+<p>Work done, W = F cos Ɵ × s</p>
+<p>W = F. s cos Ɵ</p>
+<p>Consider a variable force, f producing a
+displacement, s.</p>
+<pre><code>Consider a very small displacement ∆𝑠 such
+that the force, f can be considered a
+constant.
+By definition: Work done, ∆𝑊 = F∆𝑠
+= Area of shaded strip
+Total work done = Area under the F – s
+graph
+</code></pre>
+<h2 id="energy-e">Energy, E.</h2>
+<pre><code>Definition: The energy is the capacity to do
+work
+</code></pre>
+<pre><code>Notes:
+Ø S.I units Joule (J), 1J = 1Nm
+</code></pre>
+<h2 id="types-of-energy">Types of Energy</h2>
+<pre><code>Mechanical Energy – K.E
+</code></pre>
+<ul>
+<li>P.E
+Thermal Energy
+Internal Energy
+Electrical Energy</li>
+</ul>
+<p>Chemical Energy</p>
+<p>Nuclear Energy</p>
+<p>Sound Energy</p>
+<p>Light Energy</p>
+<h2 id="energy-conversions">Energy Conversions</h2>
+<p>Example: Oil power generator</p>
+<p>Chemical à Thermal à Mechanicalà
+Electrical.</p>
+<h2 id="hydroelectric-generator">Hydroelectric generator</h2>
+<ul>
+<li>car</li>
+<li>light bulbs</li>
+</ul>
+<h2 id="principle-of-conservation-of-energy">Principle of Conservation of Energy</h2>
+<p>The total energy in a closed system is to be
+conserved.</p>
+<h2 id="kinetic-energy-ek">Kinetic Energy, Ek</h2>
+<p>Is the energy that the body posses by virtue
+of its motion.</p>
+<p>Consider a body of mass, m accelerated
+uniformly with acceleration, a from a
+velocity u to a velocity, v in a time, t as it
+moves through a displacement, s.</p>
+<p>Change in K.E, ∆ EK = Work done = W</p>
+<pre><code>W = Fs ∆ EK = Fs
+F = ma à ∆ EK = mas
+</code></pre>
+<pre><code>V^2 = u^2 + 2as
+</code></pre>
+<pre><code>à as =^56 𝑣^6 - 56 𝑢^6 à ∆EK = m (^56 𝑣^6 - 56 𝑢^6 )
+</code></pre>
+<pre><code>∆ EK =^56 m𝑣^6 - 56 m𝑢^6
+</code></pre>
+<pre><code>∆EK = Final K.E – Initial K.E
+</code></pre>
+<pre><code>Hence a body of mass, m moving with
+velocity, v has K.E given by
+</code></pre>
+<pre><code>EK =^56 𝑚𝑣^6
+</code></pre>
+<h2 id="potential-energy-ep">Potential Energy, EP</h2>
+<pre><code>Potential energy is the energy that the body
+possesses by virtue of its state or position.
+Examples
+State – stretched string/spring – Strain
+Energy
+</code></pre>
+<pre><code>For a Hooke’s Law spring Ep =^56 𝑘𝑥^6
+</code></pre>
+<pre><code>Position – electric charge in an electric field
+of another charge. Mass in gravitational
+field of another mass.
+</code></pre>
+<h2 id="gravitational-pe">Gravitational P.E</h2>
+<p><strong>Gravitational P.E</strong> is the energy that the
+body possesses by virtue of its position in a
+gravitational field of another body.</p>
+<p>Consider an object of mass, m moved
+through a vertical distance, ∆ℎ near the
+earth’s surface where the gravitational field
+strength maybe assumed constant.</p>
+<p>Change in Gravitational P.E, ∆𝐸c = Work
+done, W</p>
+<p>W = Fs à ∆𝐸c = F∆ℎ</p>
+<p>The force required to lift the mass without
+acceleration is equal to the gravitation
+force, mg</p>
+<p>à∆𝐸c = mg∆ℎ</p>
+<h2 id="power-p">Power, P</h2>
+<p>Definition: Power is defined as the work
+done or energy transferred per unit time.</p>
+<p>P = \$ or P =^7 $</p>
+<p>Notes:</p>
+<p>The S.I unit of power is the Watt (W)</p>
+<p>Definition: The Watt (W) is the rate of doing
+work or rate of transfer of energy at 1Js-^1</p>
+<p>1W = 1Js-^1</p>
+<p>By definition: P = \$</p>
+<pre><code>W = Fs à P = /$!
+</code></pre>
+<pre><code>#$ = v à p = Fv
+</code></pre>
+<pre><code>Efficiency = e#(o.;H92(:^ H92(: q&amp;c.$^ p.$c.$ × 100
+</code></pre>
+<pre><code>= e#(o.;^29 :+7&amp;(:,r^ !9&amp;(^ 9: &quot;&amp;c.$^ (&amp;(:,r^ 9.$c.$ × 100
+</code></pre>
+<h4 id="hw">H.W</h4>
+<pre><code>Alternative sources of energy in the
+Caribbean
+</code></pre>
+<ul>
+<li>Geothermal</li>
+<li>Wind</li>
+<li>Solar</li>
+<li>Biofuel and Ethanol</li>
+<li>Hydroelectric</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js"></script>
+        <script src="search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.5.3
+Build Date UTC : 2023-09-22 14:02:50.408280+00:00
+-->
