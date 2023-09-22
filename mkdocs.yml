@@ -1,5 +1,5 @@
 site_name: ARETE PHYSICS
-site_url: https://github.io/lain-source/PHYSICS
+site_url: https://github./lain-source/PHYSICS
 theme:
   name: material
   features:
@@ -26,35 +26,6 @@ theme:
         name: Switch to light mode    
       primary: teal
       accent: lime
-
-plugins:
-  - social
-
-extra:
-  social:
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/lain-source
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/
-    - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/anthony-jr-cooper-719a59197/
-
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - admonition
-  - pymdownx.arithmatex:
-      generic: true
-  - footnotes
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.mark
-  - attr_list
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 copyright: |
   &copy; 2023 <a href="https://github.com/lain-source"  target="_blank" rel="noopener">DAYLIT</a>
