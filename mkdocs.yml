@@ -27,9 +27,25 @@ theme:
       primary: teal
       accent: lime
 
+plugins:
+  - glightbox
+
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+
+
+
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
 copyright: |
   &copy; 2023 <a href="https://github.com/lain-source"  target="_blank" rel="noopener">DAYLIT</a>
 
 
-  plugins:
-  - glightbox

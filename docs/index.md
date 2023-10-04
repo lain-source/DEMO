@@ -24,9 +24,12 @@ physical quantity may be defined by
 ```
 a) A procedure for measuring (eg.
 distance and time)
-b) A procedure for calculating (eg.
-speed v = !"#$%&'($")( )
+b) A procedure for calculating (eg. 
+speed = $\frac{distance}{time}$
 ```
+
+
+
 Most physical quantities consist of a
 product of a numerical magnitude and a
 unit.
@@ -70,8 +73,10 @@ called the Avogadro constant , NA. it is the
 same for all the substances.
 ```
 ```
-NA = 6.02 × 1023 mol-^1
+$$NA = 6.02 × 10^{23} mol
+^{-1}$$
 ```
+
 ## Derived Quantity and Derived Units
 
 ```
@@ -79,10 +84,9 @@ All other quantities are called derived
 quantities. There are obtained in
 accordance with a defined equation for the
 quantity which may involve
-a) One or more base quantities
-```
 
 ```
+a) One or more base quantities
 b) Base quantities and derived
 quantities
 c) Derived quantities
@@ -96,38 +100,19 @@ Same derived quantity have no units and
 are called dimensionless quantities (eg.
 refractive index and relative density)
 
-```
-Derived Quantity Derived Unit
-Area A = L × B
-(rectangle)
-```
-```
-m × m = m^2
-```
-```
-Volume V = L×B×H
-(cuboid)
-```
-```
-m × m × m = m^3
-```
-Density 𝜌 = )* (^) )+,! = kg ms-^3
-Speed v = #$ )# = ms-^1
-Acceleration a =
-*-.
-$^
-)#"#
-#^ = ms
-- (^2)
-Force F = ma Kg × ms-^2 = kgms-^2
-= Newton (N)
-Pressure P = / 0 )^1 $ = Nm-^2 or Pascal
-(Pa)
-Work W = F × g N × m = Nm or
-Joule (J)
-Power P =^23 
-#^ = Js
-- (^1) or Watt (W)
+| Derived Quantity   | Derived Unit               |
+|--------------------|-----------------------------|
+| Area (A) - Rectangle | \(A = L \times B\) (rectangle) |
+|                    | \(m \times m = m^2\)          |
+| Volume (V) - Cuboid | \(V = L \times B \times H\) (cuboid) |
+|                    | \(m \times m \times m = m^3\)  |
+| Density (\(𝜌\))      | \(𝜌 = \frac{)}{+} \cdot ! = \text{kg m}^{-3}\) |
+| Speed (\(v\))       | \(v = \#) (\# = \text{ms}^{-1}\) |
+| Acceleration (\(a\)) | \(a = *-. \$) (\$ = \text{ms}^{-2}\) |
+| Force (F)           | \(F = ma\) (\(Kg \times \text{ms}^{-2} = \text{kgms}^{-2} = \text{Newton (N)}\)) |
+| Pressure (P)        | \(P = \frac{/}{0 1}) (\text{Nm}^{-2} \text{ or Pascal (Pa)}) |
+| Work (W)            | \(W = F \times g\) (\(N \times \text{m} = \text{Nm or Joule (J)}\)) |
+| Power (P)           | \(P = \frac{2}{3 4}) (\text{Js}^{-1} \text{ or Watt (W)}) |
 
 ## Dimensional Analysis
 
@@ -140,12 +125,16 @@ Example: Ek =^56 mv^2
 
 ```
 L.H.S [J] = [Nm]
-= [kg.ms-^2 .m]
-= [kgm^2 s-^2 ]
-L.H.S = R.H.S
+= [kg \cdot m^2/s^2] \quad \text{(Joules)}
+= [kg \cdot m/s^2] \cdot [m] \quad \text{(Joules)}
+= \text{R.H.S}
 Therefore, the equation is homogeneous
 ```
 ```
+\[R.H.S [kg][m/s^{-1}]^2 \\= [kg][m^2 s^2] \\= [kgm^2 s^{-2}]\]\\L.H.S = R.H.S
+
+
+
 R.H.S [kg][ms-^1 ]^2 = [kg][m^2 s^2 ]
 = [kgm^2 s-^2 ]
 b) P = 𝞺gh
