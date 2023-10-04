@@ -48,17 +48,9 @@ Length, l Metre (m)
 Time, t Second (s)
 Temperature, T Kelvin (K)
 Electric current, I Ampere (A)
-Amount of
-substance, n
-```
-```
+Amount of substance, n
 Mole (mol)
-```
-```
-Luminous intensity,
-Iv
-```
-```
+Luminous intensity,Iv
 Candele (cd)
 ```
 ## The Mole
