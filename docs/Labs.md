@@ -13,5 +13,5 @@ Look forward to next week for links to labs here:
 | Temperature, T Kelvin (K)       | Kelvin (K)         |
 | Electric Current, I Ampere (A)  | Ampere (A)         |
 | Amount Of Substance, N          | Mole (mol)         |
-| Luminous Intensity, Iv          |   Candele (cd)
-The |
+| Luminous Intensity, Iv          |   Candele (cd)     |
+
